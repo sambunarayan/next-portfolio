@@ -1,8 +1,12 @@
 import Layout from '@/components/layout';
 import Head from 'next/head';
 import Styles from '@/styles/aboutme.module.css';
+import Image from 'next/image';
+import { TOKEN, CAREER_DATABASE_ID } from '../config';
 
-export default function Projects({ projects }) {
+export default function Career({ projects }) {
+    const imageSrc = projects.results[0].cover.file?.url || projects.results[0].cover.external.url
+
     return <>
         <Head>
             <title>Jeus portfolio</title>
@@ -14,7 +18,16 @@ export default function Projects({ projects }) {
             <section className="text-gray-600 body-font mb-10">
                 <div className="container px-5 py-10 mb-10 mx-auto flex flex-wrap">
                     <div className="lg:w-2/5 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-                        {/* <img alt="feature" className="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500"> */}
+                        <div className="rounded-lg h-100 overflow-hidden">
+                            <Image
+                                src={imageSrc}
+                                width="100"
+                                height="60"
+                                layout="responsive"
+                                objectFit='contain'
+                                alt="Jeus"
+                            />
+                        </div>
                     </div>
                     <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                         <div className="flex flex-col mb-2 lg:items-start items-center">
@@ -57,19 +70,11 @@ export default function Projects({ projects }) {
                                 <p className="leading-relaxed text-base">Busan University of Foreign Studies.</p>
                             </div>
                         </div>
-                        <div class="mt-5 mb-0">
-                            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-0">Career</h1>
-                        </div>
-                    </div>
-                </div>
-                <div className="container px-5 mx-auto flex flex-wrap">
-                    <div className="lg:w-2/5 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-                    </div>
-                    <div className="flex flex-col flex-wrap lg:py-1 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-0 mt-10">Career</h1>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
-                                    <h4><b>富士ソフト株式会社</b></h4>
+                                    <h5><b>富士ソフト株式会社</b></h5>
                                     <p>
                                         2017/1~現在
                                     </p>
@@ -148,4 +153,24 @@ export default function Projects({ projects }) {
             </section>
         </Layout>
     </>
+}
+
+export async function getStaticProps() {
+    const options = {
+        method: 'POST',
+        headers: {
+            accept: 'application/json',
+            'Notion-Version': '2022-06-28',
+            'content-type': 'application/json',
+            Authorization: `Bearer ${TOKEN}`
+        },
+        body: JSON.stringify({ page_size: 100 })
+    };
+
+    const res = await fetch(`https://api.notion.com/v1/databases/${CAREER_DATABASE_ID}/query`, options);
+    const projects = await res.json();
+
+    return {
+        props: { projects }, // will be passed to the page component as props
+    }
 }

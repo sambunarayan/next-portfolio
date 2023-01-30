@@ -30,10 +30,10 @@
 .cbody h3 {
     position: relative;
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 5px;
     padding-left: 1em;
     text-align: left;
-    text-weight: bold;
 }
 
 .cbody h3:not(:first-child) {
@@ -49,4 +49,9 @@
     content: "";
     border-radius: 3px;
     background-color: rgb(72, 72, 72);
+}
+
+.cbody h4 {
+    margin-left: 15px;
+    color: #4c4c4c;
 }
