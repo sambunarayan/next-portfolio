@@ -16,7 +16,6 @@ export default function ProjectPreview({ data }) {
         detail_text: detail_text,
         imageSrc: imageSrc
     };
-
     return (
         <Link href={{ pathname: "../../project-details", query: query }} as="project-details" legacyBehavior>
             <div className="project-card p-5 md:w-1/4 sm:mb-0 mb-6">
