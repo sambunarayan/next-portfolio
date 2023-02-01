@@ -21,10 +21,10 @@ export default function Projects({ projects }) {
                             </div>
                             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                                 <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Projects</h1>
-                                <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">趣味または勉強目的でやってきたプロジェクトを紹介します。</p>
+                                <p className="sm:w-3/5 text-end leading-relaxed text-base sm:pl-10 pl-0 pr-5">趣味または勉強目的でやってきたプロジェクトを紹介します。</p>
                             </div>
                         </div>
-                        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                        <div className="justify-center flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                             {projects.results.map((aProject) => (
                                 <ProjectPreview id={aProject.id} data={aProject} />
                             ))}
@@ -50,8 +50,6 @@ export async function getStaticProps() {
 
     const res = await fetch(`https://api.notion.com/v1/databases/${PROJECTS_DATABASE_ID}/query`, options);
     const projects = await res.json();
-
-    console.log(projects.results[0].properties.名前.title[0].plain_text);
 
     return {
         props: { projects }, // will be passed to the page component as props
