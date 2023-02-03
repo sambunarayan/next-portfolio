@@ -2,11 +2,14 @@ import Image from 'next/image';
 import Layout from '@/components/layout';
 import Head from 'next/head';
 import { useRouter } from "next/router";
+import Styles from '@/styles/aboutme.module.css';
 
 export default function ProjectDetail() {
     // const title = Router.properties.名前.title[0].plain_text
     const router = useRouter();
     const title = router.query.title;
+    const startDate = router.query.start_date;
+    const endDate = router.query.end_date;
     // console.log(">>>" + router.query.title);
     return (
         <>
@@ -19,7 +22,7 @@ export default function ProjectDetail() {
             <Layout>
                 <section class="text-gray-600 body-font">
                     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                        <div className="rounded-lg h-100 overflow-hidden mb-20">
+                        <div className="rounded-lg w-70 h-70 overflow-hidden mb-20">
                             <Image
                                 src={router.query.imageSrc}
                                 width="100"
@@ -31,8 +34,21 @@ export default function ProjectDetail() {
                             />
                         </div>
                         <div class="text-left lg:w-2/3 w-full">
-                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{router.query.title}</h1>
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{title}</h1>
                             <p class="mb-8 leading-relaxed">{router.query.detail_text}</p>
+
+                            <div className={Styles.cbody}>
+                                <div className={Styles.itemdiv}>
+                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                        <div class={Styles.sub}>
+                                            開発期間
+                                        </div>
+                                        <div className="flex-grow pl-11">
+                                            <p className="leading-relaxed text-base">{startDate} ~ {endDate}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
