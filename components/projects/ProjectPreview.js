@@ -8,16 +8,19 @@ export default function ProjectPreview({ data }) {
     const detail_text = data.properties.Description.rich_text[0].plain_text
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;
+    const github = data.properties.Github.url;
 
     const query = {
         title: title,
         start_date: start_date,
         end_date: end_date,
         detail_text: detail_text,
-        imageSrc: imageSrc
+        imageSrc: imageSrc,
+        tags: tags,
+        github: github
     };
     return (
-        <Link href={{ pathname: "../../project-details", query: query }} as="project-details" legacyBehavior>
+        <Link href={{ pathname: "../../project-details", query: {post: JSON.stringify(query)} }} as="project-details" legacyBehavior>
             <div className="project-card p-5 md:w-1/4 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
                     <Image
@@ -26,6 +29,7 @@ export default function ProjectPreview({ data }) {
                         height="60"
                         layout="responsive"
                         objectFit="contain"
+                        alt={"image"}
                     />
                 </div>
                 <h2 className="text-2xl font-medium title-font text-gray-900 mt-5 font-bold">{title}</h2>
@@ -40,3 +44,4 @@ export default function ProjectPreview({ data }) {
         </Link>
     );
 }
+

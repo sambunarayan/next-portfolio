@@ -13,7 +13,7 @@
 .cbody {
     margin: 10px;
     flex-wrap: wrap;
-    display: flex;
+    display: flex flex-col;
   }
   
 .cbody p {

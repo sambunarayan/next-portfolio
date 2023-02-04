@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/components/layout';
 import Head from 'next/head';
@@ -5,12 +6,19 @@ import { useRouter } from "next/router";
 import Styles from '@/styles/aboutme.module.css';
 
 export default function ProjectDetail() {
-    // const title = Router.properties.名前.title[0].plain_text
+    // const { post, isLoading, mutate } = usePost(router.query.post);
     const router = useRouter();
-    const title = router.query.title;
-    const startDate = router.query.start_date;
-    const endDate = router.query.end_date;
-    // console.log(">>>" + router.query.title);
+    const { post } = router.query;
+    console.log(post);
+    const data = JSON.parse(post);
+    const imageSrc = data.imageSrc;
+    const title = data.title;
+    const detailText = data.detail_text;
+    const startDate = data.start_date;
+    const endDate = data.end_date;
+    const tags = data.tags;
+    const github = data.github;
+
     return (
         <>
             <Head>
@@ -22,30 +30,57 @@ export default function ProjectDetail() {
             <Layout>
                 <section class="text-gray-600 body-font">
                     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                        <div className="rounded-lg w-70 h-70 overflow-hidden mb-20">
+                        <div className="rounded-lg h-70 overflow-hidden mb-20">
                             <Image
-                                src={router.query.imageSrc}
-                                width="100"
-                                height="60"
-                                alt="Test"
-                                layout="responsive"
-                                objectFit="none"
+                                src={imageSrc}
+                                width={400}
+                                height={200}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                }}
                                 quality="100"
                             />
                         </div>
-                        <div class="text-left lg:w-2/3 w-full">
+                        <div class="text-center lg:w-2/4 w-full ">
                             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{title}</h1>
-                            <p class="mb-8 leading-relaxed">{router.query.detail_text}</p>
+                            <p class="mb-8 leading-relaxed">{detailText}</p>
 
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
-                                        <div class={Styles.sub}>
-                                            開発期間
+                                        <h3>開発期間</h3>
+                                        <div className={Styles.sub}>{startDate} ~ {endDate}</div>
+                                    </div>
+                                </div>
+                                <div className={Styles.itemdiv}>
+                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                        <h3>Skill</h3>
+                                        <div className={Styles.sub}>
+                                            <div className="flex flex-wrap items-start mt-2">
+                                                {tags.map((aTag) => (
+                                                    <h1 className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 m-1" key={aTag.id}>
+                                                        {aTag.name}
+                                                    </h1>
+                                                ))}
+                                            </div>
                                         </div>
-                                        <div className="flex-grow pl-11">
-                                            <p className="leading-relaxed text-base">{startDate} ~ {endDate}</p>
+                                    </div>
+                                </div>
+                                <div className={Styles.itemdiv}>
+                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                        <h3>Github url</h3>
+                                        <div className={Styles.sub}>
+                                            <Link href={github} legacyBehavior>
+                                                <a target="_blank">{github}</a>
+                                            </Link>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className={Styles.itemdiv}>
+                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                        <h3>開発期間</h3>
+                                        <div className={Styles.sub}>{startDate} ~ {endDate}</div>
                                     </div>
                                 </div>
                             </div>
@@ -55,4 +90,11 @@ export default function ProjectDetail() {
             </Layout>
         </>
     );
+}
+
+export async function getServerSideProps(context) {
+    const { query } = context;
+    return {
+        props: { query },
+    };
 }
