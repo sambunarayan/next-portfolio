@@ -4,12 +4,13 @@ import Layout from '@/components/layout';
 import Head from 'next/head';
 import { useRouter } from "next/router";
 import Styles from '@/styles/aboutme.module.css';
+import SystemStructure from '../components/projects/SystemStructure';
 
 export default function ProjectDetail() {
     // const { post, isLoading, mutate } = usePost(router.query.post);
     const router = useRouter();
     const { post } = router.query;
-    console.log(post);
+    // console.log(post);
     const data = JSON.parse(post);
     const imageSrc = data.imageSrc;
     const title = data.title;
@@ -18,7 +19,8 @@ export default function ProjectDetail() {
     const endDate = data.end_date;
     const tags = data.tags;
     const github = data.github;
-
+    const purpose = data.purpose;
+    const system_structure = data.system_structure;
     return (
         <>
             <Head>
@@ -79,10 +81,13 @@ export default function ProjectDetail() {
                                 </div>
                                 <div className={Styles.itemdiv}>
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
-                                        <h3>開発期間</h3>
-                                        <div className={Styles.sub}>{startDate} ~ {endDate}</div>
+                                        <h3>目的</h3>
+                                        {purpose.map((pp) => (
+                                            <li key={pp.id}>{pp.name}</li>
+                                        ))}
                                     </div>
                                 </div>
+                                <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain}  />
                             </div>
                         </div>
                     </div>

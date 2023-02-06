@@ -9,6 +9,9 @@ export default function ProjectPreview({ data }) {
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;
     const github = data.properties.Github.url;
+    const purpose = data.properties.Purpose.multi_select;
+    const system_structure = data.properties.StructureImage;
+    const structureExplain = data.properties.StructureExplain.multi_select;
 
     const query = {
         title: title,
@@ -17,7 +20,10 @@ export default function ProjectPreview({ data }) {
         detail_text: detail_text,
         imageSrc: imageSrc,
         tags: tags,
-        github: github
+        github: github,
+        purpose: purpose,
+        system_structure: system_structure,
+        structureExplain: structureExplain
     };
     return (
         <Link href={{ pathname: "../../project-details", query: {post: JSON.stringify(query)} }} as="project-details" legacyBehavior>
