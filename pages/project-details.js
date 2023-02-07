@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useRouter } from "next/router";
 import Styles from '@/styles/aboutme.module.css';
 import SystemStructure from '../components/projects/SystemStructure';
+import Feature from '../components/projects/Feature';
 
 export default function ProjectDetail() {
     // const { post, isLoading, mutate } = usePost(router.query.post);
@@ -21,6 +22,7 @@ export default function ProjectDetail() {
     const github = data.github;
     const purpose = data.purpose;
     const system_structure = data.system_structure;
+    const features = data.features;
     return (
         <>
             <Head>
@@ -88,6 +90,7 @@ export default function ProjectDetail() {
                                     </div>
                                 </div>
                                 <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain}  />
+                                <Feature id={features.id} features={features.multi_select} />
                             </div>
                         </div>
                     </div>

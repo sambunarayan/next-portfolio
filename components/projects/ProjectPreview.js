@@ -12,6 +12,7 @@ export default function ProjectPreview({ data }) {
     const purpose = data.properties.Purpose.multi_select;
     const system_structure = data.properties.StructureImage;
     const structureExplain = data.properties.StructureExplain.multi_select;
+    const features = data.properties.Features;
 
     const query = {
         title: title,
@@ -23,7 +24,8 @@ export default function ProjectPreview({ data }) {
         github: github,
         purpose: purpose,
         system_structure: system_structure,
-        structureExplain: structureExplain
+        structureExplain: structureExplain,
+        features: features
     };
     return (
         <Link href={{ pathname: "../../project-details", query: {post: JSON.stringify(query)} }} as="project-details" legacyBehavior>
