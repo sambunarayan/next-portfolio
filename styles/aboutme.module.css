@@ -8,6 +8,7 @@
 
 .sub {
     margin-left: 20px;
+    color: #a1b2cc;
 }
 
 .cbody {
@@ -19,7 +20,7 @@
 .cbody p {
     font-size: 15px;
     line-height: 1.8;
-    color: #4c4c4c;
+    color: #a1b2cc;
 }
 
 .itemdiv {
@@ -53,7 +54,7 @@
 
 .cbody h4 {
     margin-left: 15px;
-    color: #4c4c4c;
+    color: #a1b2cc;
 }
 
 .cbody li {

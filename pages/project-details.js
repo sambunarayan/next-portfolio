@@ -23,6 +23,7 @@ export default function ProjectDetail() {
     const purpose = data.purpose;
     const system_structure = data.system_structure;
     const features = data.features;
+    console.log(detailText);
     return (
         <>
             <Head>
@@ -48,11 +49,13 @@ export default function ProjectDetail() {
                         </div>
                         <div class="text-center lg:w-2/4 w-full ">
                             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{title}</h1>
-                            <p class="mb-8 leading-relaxed">{detailText}</p>
+                            <p class="mb-8 leading-relaxed">{detailText.split("\n").map((s) => (
+                                <div>{s}</div>
+                            ))}</p>
 
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                    <div className="flex flex-col mb-2 lg:items-start items-center text-gray-400">
                                         <h3>開発期間</h3>
                                         <div className={Styles.sub}>{startDate} ~ {endDate}</div>
                                     </div>
@@ -61,7 +64,7 @@ export default function ProjectDetail() {
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
                                         <h3>Skill</h3>
                                         <div className={Styles.sub}>
-                                            <div className="flex flex-wrap items-start mt-2">
+                                            <div className="flex flex-wrap items-start mt-2 ">
                                                 {tags.map((aTag) => (
                                                     <h1 className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 m-1" key={aTag.id}>
                                                         {aTag.name}
@@ -85,7 +88,7 @@ export default function ProjectDetail() {
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
                                         <h3>目的</h3>
                                         {purpose.map((pp) => (
-                                            <li key={pp.id}>{pp.name}</li>
+                                            <li className="text-gray-500 dark:text-gray-300" key={pp.id}>{pp.name}</li>
                                         ))}
                                     </div>
                                 </div>
