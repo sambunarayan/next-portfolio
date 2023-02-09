@@ -23,7 +23,7 @@ export default function SystemStructure({ files, explains }) {
                         </div>
                     ))}
                     {explains.map((ex) => (
-                        <li key={ex.id}>{ex.name}</li>
+                        <li className="project-sub" key={ex.id}>{ex.name}</li>
                     ))}
                 </div>
             </div>
