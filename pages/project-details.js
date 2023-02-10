@@ -47,12 +47,11 @@ export default function ProjectDetail() {
                                 quality="100"
                             />
                         </div>
-                        <div class="text-center lg:w-2/4 w-full ">
+                        <div class="text-center lg:w-2/4 w-full">
                             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">{title}</h1>
                             <p class="mb-8 leading-relaxed">{detailText.split("\n").map((s) => (
                                 <div>{s}</div>
                             ))}</p>
-
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
