@@ -6,12 +6,12 @@ import { useRouter } from "next/router";
 import Styles from '@/styles/aboutme.module.css';
 import SystemStructure from '../components/projects/SystemStructure';
 import Feature from '../components/projects/Feature';
+import CiCd from '../components/projects/CiCd';
 
 export default function ProjectDetail() {
     // const { post, isLoading, mutate } = usePost(router.query.post);
     const router = useRouter();
     const { post } = router.query;
-    // console.log(post);
     const data = JSON.parse(post);
     const imageSrc = data.imageSrc;
     const title = data.title;
@@ -23,7 +23,7 @@ export default function ProjectDetail() {
     const purpose = data.purpose;
     const system_structure = data.system_structure;
     const features = data.features;
-    console.log(detailText);
+    // console.log(detailText);
     return (
         <>
             <Head>
@@ -93,6 +93,7 @@ export default function ProjectDetail() {
                                 </div>
                                 <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain}  />
                                 <Feature id={features.id} features={features.multi_select} />
+                                <CiCd/>
                             </div>
                         </div>
                     </div>
