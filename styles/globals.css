@@ -45,3 +45,7 @@ p {
 hr {
     @apply border-black dark:border-slate-800
 }
+
+b {
+    @apply text-slate-600 dark:text-slate-300
+}

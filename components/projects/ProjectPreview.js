@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ProjectPreview({ data }) {
+    const seqNum = data.properties.SeqNum.rich_text[0].text.content;
     const title = data.properties.名前.title[0].plain_text
     const start_date = data.properties.WorkPeriod.date.start
     const end_date = data.properties.WorkPeriod.date.end
@@ -16,6 +17,7 @@ export default function ProjectPreview({ data }) {
     const features = data.properties.Features;
 
     const query = {
+        seqNum: seqNum,
         title: title,
         start_date: start_date,
         end_date: end_date,

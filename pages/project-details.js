@@ -4,15 +4,18 @@ import Layout from '@/components/layout';
 import Head from 'next/head';
 import { useRouter } from "next/router";
 import Styles from '@/styles/aboutme.module.css';
+import ServerSpec from '../components/projects/ServerSpec';
 import SystemStructure from '../components/projects/SystemStructure';
 import Feature from '../components/projects/Feature';
 import CiCd from '../components/projects/CiCd';
+import Monitoring  from '../components/projects/Monitoring';
 
 export default function ProjectDetail() {
     // const { post, isLoading, mutate } = usePost(router.query.post);
     const router = useRouter();
     const { post } = router.query;
     const data = JSON.parse(post);
+    const seqNum = data.seqNum;
     const imageSrc = data.imageSrc;
     const title = data.title;
     const detailText = data.detail_text;
@@ -91,9 +94,11 @@ export default function ProjectDetail() {
                                         ))}
                                     </div>
                                 </div>
+                                <ServerSpec seqNum={seqNum}/>
                                 <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain}  />
-                                <Feature id={features.id} features={features.multi_select} />
-                                <CiCd/>
+                                <Feature id={features.id} seqNum={seqNum} features={features.multi_select} />
+                                <CiCd seqNum={seqNum}/>
+                                <Monitoring seqNum={seqNum}/>
                             </div>
                         </div>
                     </div>

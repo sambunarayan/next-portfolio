@@ -45,7 +45,15 @@ export async function getStaticProps() {
             'content-type': 'application/json',
             Authorization: `Bearer ${TOKEN}`
         },
-        body: JSON.stringify({ page_size: 100 })
+        body: JSON.stringify({
+            page_size: 100,
+            "sorts": [
+                {
+                    "property": "SeqNum",
+                    "direction": "ascending"
+                }
+            ]
+        })
     };
 
     const res = await fetch(`https://api.notion.com/v1/databases/${PROJECTS_DATABASE_ID}/query`, options);
