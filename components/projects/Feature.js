@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import Styles from '@/styles/aboutme.module.css';
+import ITBoardImage1 from '/public/images/jeus-blog-it-board-1.png';
+import ITBoardNewImage1 from '/public/images/jeus-blog-it-board-new.png';
+import ITBoardNewImage2 from '/public/images/jeus-blog-it-board-new2.png';
 
 export default function Feature({ seqNum, features }) {
     // console.log(features);
@@ -32,8 +35,39 @@ export default function Feature({ seqNum, features }) {
                         <div className="project-sub text-left">
                             <b>カテゴリ別section作成機能</b><br />
                             言語やアプリケーションなどカテゴリ毎に投稿をまとめられるようにsection作成機能を設けました。
+                        </div><br />
+                        <div className="project-sub indent-11 mt-10"><b>[IT board ページ]</b></div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            <Image src={ITBoardImage1}
+                            className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                            新しい投稿ページを作成したい場合、「+」ボタンを押すことで作成できます。
                         </div>
-
+                        <div className="project-sub indent-11 mt-10"><b>[新しい投稿ボード作成ページ]</b></div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            <Image src={ITBoardNewImage1}
+                            className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto'
+                                }}
+                                quality="100" />
+                            文字の色やメニューに表示するロゴを選択できます。
+                        </div>
+                        <div className="project-sub indent-11 mt-10"><b>[新しい投稿ボード作成完了]</b></div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            <Image src={ITBoardNewImage2}
+                                className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                        </div>
                     </div>
                 </div>
             )

@@ -8,7 +8,7 @@ import ServerSpec from '../components/projects/ServerSpec';
 import SystemStructure from '../components/projects/SystemStructure';
 import Feature from '../components/projects/Feature';
 import CiCd from '../components/projects/CiCd';
-import Monitoring  from '../components/projects/Monitoring';
+import Monitoring from '../components/projects/Monitoring';
 
 export default function ProjectDetail() {
     // const { post, isLoading, mutate } = usePost(router.query.post);
@@ -37,9 +37,10 @@ export default function ProjectDetail() {
             </Head>
             <Layout>
                 <section class="text-gray-600 body-font">
-                    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                    <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
                         <div className="rounded-lg h-70 overflow-hidden mb-20">
                             <Image
+                                className="border-2"
                                 src={imageSrc}
                                 width={400}
                                 height={200}
@@ -50,7 +51,7 @@ export default function ProjectDetail() {
                                 quality="100"
                             />
                         </div>
-                        <div class="text-center lg:w-2/4 w-full">
+                        <div class="text-center lg:w-2/3 w-full">
                             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">{title}</h1>
                             <p class="mb-8 leading-relaxed">{detailText.split("\n").map((s) => (
                                 <div>{s}</div>
@@ -94,11 +95,11 @@ export default function ProjectDetail() {
                                         ))}
                                     </div>
                                 </div>
-                                <ServerSpec seqNum={seqNum}/>
-                                <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain}  />
+                                <ServerSpec seqNum={seqNum} />
+                                <SystemStructure id={system_structure.id} files={system_structure.files} explains={data.structureExplain} />
                                 <Feature id={features.id} seqNum={seqNum} features={features.multi_select} />
-                                <CiCd seqNum={seqNum}/>
-                                <Monitoring seqNum={seqNum}/>
+                                <CiCd seqNum={seqNum} />
+                                <Monitoring seqNum={seqNum} />
                             </div>
                         </div>
                     </div>
