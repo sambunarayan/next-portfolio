@@ -3,6 +3,10 @@ import Styles from '@/styles/aboutme.module.css';
 import ITBoardImage1 from '/public/images/jeus-blog-it-board-1.png';
 import ITBoardNewImage1 from '/public/images/jeus-blog-it-board-new.png';
 import ITBoardNewImage2 from '/public/images/jeus-blog-it-board-new2.png';
+import postListImage from '/public/images/post-list1.png';
+import postImage2 from '/public/images/post2.png';
+import postImage3 from '/public/images/post3.png';
+import afterPostTimeLineImage from '/public/images/after-post-time-line.png';
 
 export default function Feature({ seqNum, features }) {
     // console.log(features);
@@ -35,11 +39,11 @@ export default function Feature({ seqNum, features }) {
                         <div className="project-sub text-left">
                             <b>カテゴリ別section作成機能</b><br />
                             言語やアプリケーションなどカテゴリ毎に投稿をまとめられるようにsection作成機能を設けました。
-                        </div><br />
+                        </div>
                         <div className="project-sub indent-11 mt-10"><b>[IT board ページ]</b></div>
                         <div className="mx-auto flex items-center justify-center flex-col">
                             <Image src={ITBoardImage1}
-                            className="border-2"
+                                className="border-2"
                                 style={{
                                     width: '80%',
                                     height: 'auto',
@@ -50,7 +54,7 @@ export default function Feature({ seqNum, features }) {
                         <div className="project-sub indent-11 mt-10"><b>[新しい投稿ボード作成ページ]</b></div>
                         <div className="mx-auto flex items-center justify-center flex-col">
                             <Image src={ITBoardNewImage1}
-                            className="border-2"
+                                className="border-2"
                                 style={{
                                     width: '80%',
                                     height: 'auto'
@@ -67,7 +71,59 @@ export default function Feature({ seqNum, features }) {
                                     height: 'auto',
                                 }}
                                 quality="100" />
+                        </div><br />
+                        <div className="project-sub text-left">
+                            <b>投稿機能</b><br />
+                            ページから新しい投稿を記載することができます。<br />
+                            日本語での投稿が可能で、イメージを添付することもできます。<br />
+                            ただし、イメージのプレビューや編集機能がないため今後文字スタイルやイメージの編集機能を実装することが目標です。<br />
                         </div>
+                        <div className="project-sub indent-11 mt-10"><b>[投稿一覧イメージ]</b></div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            <Image src={postListImage}
+                                className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                        </div><br />
+                        <div className="project-sub indent-11 mt-10"><b>[投稿作成イメージ]</b></div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            <Image src={postImage2}
+                                className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                        </div><br />
+                        <div className="project-sub indent-11 mt-10">
+                            <b>[投稿作成イメージ]</b><br />
+                        </div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                            投稿されたイメージは以下のように表示されます。
+                            <Image src={postImage3}
+                                className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                        </div><br />
+                        <div className="project-sub indent-11 mt-10">
+                            <b>[投稿後のTimeLineイメージ]</b>
+                        </div>
+                        <div className="mx-auto flex items-center justify-center flex-col">
+                                投稿後、TimeLineに最新投稿として表示されます。
+                            <Image src={afterPostTimeLineImage}
+                                className="border-2"
+                                style={{
+                                    width: '80%',
+                                    height: 'auto',
+                                }}
+                                quality="100" />
+                        </div><br />
                     </div>
                 </div>
             )
