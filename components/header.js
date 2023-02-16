@@ -25,7 +25,9 @@ export default function Header() {
                         <Link href="/projects" legacyBehavior>
                             <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Project</a>
                         </Link>
-                        <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Contact</a>
+                        <Link href="/contact-me" legacyBehavior>
+                            <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Contact</a>
+                        </Link>
                     </nav>
                     <DarkModeToggleButton />
                 </div>
