@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/layout';
 import React from 'react'
-
 import Lottie from 'react-lottie-player'
 import lottieJson from '/public/contact-animate.json'
 
