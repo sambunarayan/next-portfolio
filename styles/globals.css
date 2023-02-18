@@ -49,3 +49,34 @@ hr {
 b {
     @apply text-slate-600 dark:text-slate-300
 }
+
+.skill-level-fill-1 {
+    @apply py-2 px-5 bg-blue-100 rounded-[3px] gap-2
+}
+.skill-level-fill-2 {
+    @apply py-2 px-5 bg-blue-200 rounded-[3px] gap-2
+}
+.skill-level-fill-3 {
+    @apply py-2 px-5 bg-blue-300 rounded-[3px] gap-2
+}
+.skill-level-fill-4 {
+    @apply py-2 px-5 bg-blue-400 rounded-[3px] gap-2
+}
+.skill-level-fill-5 {
+    @apply py-2 px-5 bg-blue-500 rounded-[3px] gap-2
+}
+.skill-level-fill-6 {
+    @apply py-2 px-5 bg-blue-600 rounded-[3px] gap-2
+}
+.skill-level-fill-7 {
+    @apply py-2 px-5 bg-blue-700 rounded-[3px] gap-2
+}
+.skill-level-fill-8 {
+    @apply py-2 px-5 bg-blue-800 rounded-[3px] gap-2
+}
+.skill-level-fill-9 {
+    @apply py-2 px-5 bg-blue-900 rounded-[3px] gap-2
+}
+.skill-level-empty {
+    @apply py-2 px-5 border-dashed border-2 rounded-[3px] gap-2
+}
