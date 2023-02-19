@@ -68,7 +68,7 @@ export default function Skill() {
                                             </g>
                                         </svg>
                                     </div>
-                                    <h2 className="text-lg text-gray-900 font-medium title-font mb-2 ml-4 mt-1">Java</h2>
+                                    <h2 className="text-lg text-gray-900 font-medium title-font mb-2 ml-4 mt-1">Spring</h2>
                                 </div>
                                 <div className="grid grid-cols-3">
                                     <small>趣味</small><small>勉強</small><small>仕事で使っている</small>
