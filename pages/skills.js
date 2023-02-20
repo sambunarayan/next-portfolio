@@ -1,7 +1,10 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Layout from '@/components/layout';
+import { TOKEN, SKILL_DATABASE_ID } from '../config';
 
-export default function Skill() {
+export default function Skill({ skillData }) {
+    console.log(skillData);
     return (
         <Layout>
             <Head>
@@ -87,8 +90,66 @@ export default function Skill() {
                             </div>
                         </div>
                     </div>
+
+                    <h3>Back-end</h3>
+                    <div className="flex flex-wrap -m-4">
+                        {skillData.results.map((s) => (
+                            <div className="xl:w-1/3 md:w-1/2 p-4">
+                                <div className="border border-gray-200 p-6 rounded-lg">
+                                    <div className="inline-flex">
+                                        <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                            <Image
+                                                src={s.properties.Image.files[0].file.url}
+                                                width="100"
+                                                height="60"
+                                                layout="responsive"
+                                                objectFit="contain"
+                                                alt={"image"}></Image>
+                                        </div>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-2 ml-4 mt-1">{s.properties.Name.title[0].plain_text}</h2>
+                                    </div>
+                                    <div className="grid grid-cols-3">
+                                        <small>趣味</small><small>勉強</small><small>仕事で使っている</small>
+                                    </div>
+                                    <div className="grid grid-cols-9 gap-1">
+                                        <span className="skill-level-fill-1" />
+                                        <span className="skill-level-fill-2" />
+                                        <span className="skill-level-fill-3" />
+                                        <span className="skill-level-fill-4" />
+                                        <span className="skill-level-fill-5" />
+                                        <span className="skill-level-fill-6" />
+                                        <span className="skill-level-fill-7" />
+                                        <span className="skill-level-empty" />
+                                        <span className="skill-level-empty" />
+                                    </div>
+                                </div>
+                            </div>
+                        ))};
+                    </div>
                 </div>
             </section>
         </Layout>
     );
+}
+
+export async function getStaticProps() {
+    const options = {
+        method: 'POST',
+        headers: {
+            accept: 'application/json',
+            'Notion-Version': '2022-06-28',
+            'content-type': 'application/json',
+            Authorization: `Bearer ${TOKEN}`
+        },
+        body: JSON.stringify({
+            page_size: 100
+        })
+    };
+
+    const res = await fetch(`https://api.notion.com/v1/databases/${SKILL_DATABASE_ID}/query`, options);
+    const skillData = await res.json();
+
+    return {
+        props: { skillData }, // will be passed to the page component as props
+    }
 }
