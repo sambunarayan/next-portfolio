@@ -4,7 +4,6 @@ import Layout from '@/components/layout';
 import { TOKEN, SKILL_DATABASE_ID } from '../config';
 
 export default function Skill({ skillData }) {
-    // console.log(skillData);
     const map = [];
     return (
         <Layout>
