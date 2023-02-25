@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '@/components/layout';
 import { TOKEN, SKILL_DATABASE_ID } from '../config';
+import SkillProgress from '../components/skills/skill-progress';
 
 export default function Skill({ skillData }) {
     const map = [];
@@ -19,31 +20,16 @@ export default function Skill({ skillData }) {
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Skills</h1>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">スキル</p>
                     </div>
+                    <h3>Front-end</h3>
+                    <div className="flex flex-wrap -m-4">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="front-end" skill={s} />
+                        ))}
+                    </div>
                     <h3>Back-end</h3>
                     <div className="flex flex-wrap -m-4">
                         {skillData.results.map((s) => (
-                            <div className="xl:w-1/3 md:w-1/2 p-4">
-                                <div className="border border-gray-200 p-6 rounded-lg">
-                                    <div className="inline-flex">
-                                        <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                            <Image
-                                                src={s.properties.Image.files[0].file.url}
-                                                width="100"
-                                                height="60"
-                                                layout="responsive"
-                                                objectFit="contain"
-                                                alt={"image"}></Image>
-                                        </div>
-                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-2 ml-4 mt-1">{s.properties.Name.title[0].plain_text}</h2>
-                                    </div>
-                                    <div className="grid grid-cols-3">
-                                        <small>趣味</small><small>勉強</small><small>仕事で使っている</small>
-                                    </div>
-                                    <div className="grid grid-cols-9 gap-1">
-                                        {rendering(s.properties.Level.multi_select[0].name)}
-                                    </div>
-                                </div>
-                            </div>
+                            <SkillProgress area="back-end" skill={s} />
                         ))}
                     </div>
                 </div>
@@ -73,16 +59,3 @@ export async function getStaticProps() {
         props: { skillData }, // will be passed to the page component as props
     }
 }
-
-const rendering = (level) => {
-    let numLevel = parseInt(level);
-    const result = [];
-    for (let i = 1; i <= numLevel; i++) {
-        result.push(<span className={"skill-level-fill-" + i} />);
-    }
-    let i = numLevel + 1;
-    while (i++ <= 9) {
-        result.push(<span className="skill-level-empty" />);
-    }
-    return result;
-};
