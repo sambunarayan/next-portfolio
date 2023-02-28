@@ -21,7 +21,7 @@ export default function SkillProgress({ area, skill }) {
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-2 ml-4 mt-1">{skill.properties.Name.title[0].plain_text}</h2>
                     </div>
                     <div className="grid grid-cols-3">
-                        <small>趣味</small><small>勉強</small><small>仕事で使っている</small>
+                        <small>趣味</small><small>頑張ってます！</small><small>得意！</small>
                     </div>
                     <div className="grid grid-cols-9 gap-1">
                         {rendering(skill.properties.Level.multi_select[0].name)}

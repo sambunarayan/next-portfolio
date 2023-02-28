@@ -8,7 +8,10 @@ export default function Hero() {
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Jaewoo's portfolio
                     <br className="hidden lg:inline-block" />
                 </h1>
-                <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <p className="mb-8 leading-relaxed">
+                    サーバーサイドエンジニアになりたいSIerです。
+                    エンジニアとして毎日成長を目指して１日１コミットを実施中です。
+                    </p>
                 <div className="flex justify-center">
                     <Link href="/projects" legacyBehavior>
                         <a className="btn-project">Projectへ</a>
