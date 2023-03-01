@@ -20,11 +20,6 @@
         hover:text-blue-600
 }
 
-.project-sub {
-    @apply ml-5 text-slate-500 dark:text-slate-400
-}
-
-
 h1, h2, h3, h4, h5, h6 {
     @apply text-slate-900 dark:text-white
 }
@@ -41,13 +36,20 @@ a {
 p {
     @apply text-slate-500 dark:text-slate-400
 }
-
 hr {
     @apply border-black dark:border-slate-800
 }
 
 b, small {
     @apply text-slate-600 dark:text-slate-300
+}
+
+.about-me-item {
+    @apply indent-1 font-bold text-slate-600 dark:text-slate-300 mb-1 text-left
+}
+
+.about-me-sub {
+    @apply ml-5 text-slate-500 dark:text-slate-400
 }
 
 .skill-level-fill-1 {
