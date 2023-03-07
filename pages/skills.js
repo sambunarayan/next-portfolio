@@ -20,19 +20,19 @@ export default function Skill({ skillData }) {
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">得意なスキル・興味を持っているスキルなどをまとめてみました！</p>
                     </div>
                     <h3 className="sm:text-2xl title-font mb-2">Front-end</h3>
-                    <div className="flex flex-wrap -m-4 mb-4">
+                    <div className="flex flex-wrap -m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="front-end" skill={s} />
                         ))}
                     </div>
                     <h3 className="sm:text-2xl title-font mb-2">Back-end</h3>
-                    <div className="flex flex-wrap -m-4 mb-4">
+                    <div className="flex flex-wrap -m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="back-end" skill={s} />
                         ))}
                     </div>
 
-                    <h3 className="sm:text-2xl title-font mb-2">Deployment</h3>
+                    <h3 className="sm:text-2xl title-font mb-1">Deployment</h3>
                     <div className="flex flex-wrap -m-4">
                         {skillData.results.map((s) => (
                             <SkillProgress area="deployment" skill={s} />
