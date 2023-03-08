@@ -12,6 +12,7 @@ export default function ProjectPreview({ data }) {
     const tags = data.properties.タグ.multi_select;
     const github = data.properties.Github.url;
     const purpose = data.properties.Purpose.multi_select;
+    const improvements = data.properties.Improvements.multi_select;
     const system_structure = data.properties.StructureImage;
     const structureExplain = data.properties.StructureExplain.multi_select;
     const features = data.properties.Features;
@@ -26,6 +27,7 @@ export default function ProjectPreview({ data }) {
         tags: tags,
         github: github,
         purpose: purpose,
+        improvements: improvements,
         system_structure: system_structure,
         structureExplain: structureExplain,
         features: features

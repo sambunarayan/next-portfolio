@@ -31,11 +31,22 @@ export default function Skill({ skillData }) {
                             <SkillProgress area="back-end" skill={s} />
                         ))}
                     </div>
-
-                    <h3 className="sm:text-2xl title-font mb-1">Deployment</h3>
-                    <div className="flex flex-wrap -m-4">
+                    <h3 className="sm:text-2xl title-font mb-2">Server</h3>
+                    <div className="flex flex-wrap -m-4 mb-1">
                         {skillData.results.map((s) => (
-                            <SkillProgress area="deployment" skill={s} />
+                            <SkillProgress area="server" skill={s} />
+                        ))}
+                    </div>
+                    <h3 className="sm:text-2xl title-font mb-2">CI / CD</h3>
+                    <div className="flex flex-wrap -m-4 mb-1">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="cicd" skill={s} />
+                        ))}
+                    </div>
+                    <h3 className="sm:text-2xl title-font mb-2">Communication tools</h3>
+                    <div className="flex flex-wrap -m-4 mb-1">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="communication-tools" skill={s} />
                         ))}
                     </div>
                 </div>

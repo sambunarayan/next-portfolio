@@ -24,6 +24,7 @@ export default function ProjectDetail() {
     const tags = data.tags;
     const github = data.github;
     const purpose = data.purpose;
+    const improvements = data.improvements;
     const system_structure = data.system_structure;
     const features = data.features;
     // console.log(detailText);
@@ -92,6 +93,14 @@ export default function ProjectDetail() {
                                         <h3>目的</h3>
                                         {purpose.map((pp) => (
                                             <li className="project-sub" key={pp.id}>{pp.name}</li>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className={Styles.itemdiv}>
+                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                        <h3>改善点 / 今後の目標</h3>
+                                        {improvements.map((pp) => (
+                                            <li className="project-sub text-left" key={pp.id}>{pp.name}</li>
                                         ))}
                                     </div>
                                 </div>

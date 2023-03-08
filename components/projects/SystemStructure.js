@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Styles from '@/styles/aboutme.module.css';
 
 export default function SystemStructure({ files, explains }) {
-    console.log(explains);
     if (files.length !== 0) {
         return (
             <div className={Styles.itemdiv}>
