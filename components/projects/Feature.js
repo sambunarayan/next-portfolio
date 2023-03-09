@@ -9,7 +9,6 @@ import postImage3 from '/public/images/post3.png';
 import afterPostTimeLineImage from '/public/images/after-post-time-line.png';
 
 export default function Feature({ seqNum, features }) {
-    // console.log(features);
     switch (seqNum) {
         case "1":
             return (
@@ -115,7 +114,7 @@ export default function Feature({ seqNum, features }) {
                             <b>[投稿後のTimeLineイメージ]</b>
                         </div>
                         <div className="mx-auto flex items-center justify-center flex-col">
-                                投稿後、TimeLineに最新投稿として表示されます。
+                            投稿後、TimeLineに最新投稿として表示されます。
                             <Image src={afterPostTimeLineImage}
                                 className="border-2"
                                 style={{
@@ -127,6 +126,15 @@ export default function Feature({ seqNum, features }) {
                     </div>
                 </div>
             )
+        case "3":
+            return (
+                <div className={Styles.itemdiv}>
+                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                        <h3>機能</h3>
+                        <div className="project-sub"><b>Black screen mode</b></div>
+                    </div>
+                </div>
+            );
         default:
             return (<></>);
     }
