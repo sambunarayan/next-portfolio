@@ -27,7 +27,6 @@ export default function ProjectDetail() {
     const improvements = data.improvements;
     const system_structure = data.system_structure;
     const features = data.features;
-    // console.log(detailText);
     return (
         <>
             <Head>
