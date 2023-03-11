@@ -11,7 +11,6 @@ import CiCd from '../components/projects/CiCd';
 import Monitoring from '../components/projects/Monitoring';
 
 export default function ProjectDetail() {
-    // const { post, isLoading, mutate } = usePost(router.query.post);
     const router = useRouter();
     const { post } = router.query;
     const data = JSON.parse(post);
