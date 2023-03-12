@@ -131,7 +131,10 @@ export default function Feature({ seqNum, features }) {
                 <div className={Styles.itemdiv}>
                     <div className="flex flex-col mb-2 lg:items-start items-center">
                         <h3>機能</h3>
-                        <div className="project-sub"><b>Black screen mode</b></div>
+                        <li><b>黒画面機能</b></li>
+                        <div className="project-sub indent-7">
+                            ページの右上にある太陽ボタンでホワイト画面とブラック画面の切り替えができます。
+                        </div>
                     </div>
                 </div>
             );
