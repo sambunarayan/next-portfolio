@@ -44,7 +44,7 @@ const description = (description) => {
     }
     return (
         <>
-            <p className="leading-relaxed text-left">
+            <p className="leading-relaxed text-left dark:text-white">
                 {description.rich_text[0].plain_text}
             </p>
         </>

@@ -13,7 +13,7 @@ export default function Feature({ seqNum, features }) {
         case "1":
             return (
                 <div className={Styles.itemdiv}>
-                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                         <h3>機能</h3>
                         <li>自動Jenkinsビルド（ビルド、デプロイ、Slack通知）</li>
                         <li>サーバーモニタリング</li>
@@ -23,11 +23,11 @@ export default function Feature({ seqNum, features }) {
         case "2":
             return (
                 <div className={Styles.itemdiv}>
-                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                         <h3>機能</h3>
                         <div className="project-sub"><b>Time Line</b></div>
                         <div className="flex flex-col ml-3 lg:items-start items-center">
-                            <li className="project-sub">最新の投稿順で初期ページに投稿一覧を表示します。</li>
+                            <li className="project-sub ">最新の投稿順で初期ページに投稿一覧を表示します。</li>
                             <div className="project-sub text-left">
                                 ページのロード速度を考慮し、Ajaxを利用して非同期で投稿一覧を取得します。<br />
                                 一回のリクエストに最新投稿10件を取得します。<br />
@@ -129,7 +129,7 @@ export default function Feature({ seqNum, features }) {
         case "3":
             return (
                 <div className={Styles.itemdiv}>
-                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                         <h3>機能</h3>
                         <li><b>黒画面機能</b></li>
                         <div className="project-sub indent-7">

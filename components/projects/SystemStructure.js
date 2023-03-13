@@ -5,7 +5,7 @@ export default function SystemStructure({ files, explains }) {
     if (files.length !== 0) {
         return (
             <div className={Styles.itemdiv}>
-                <div className="flex flex-col mb-2 lg:items-start items-center">
+                <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                     <h3>System Structure</h3>
                     {files.map((ss) => (
                         <div className="rounded-lg h-70 overflow-hidden mb-1">

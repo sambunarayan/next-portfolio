@@ -57,13 +57,13 @@ export default function ProjectDetail() {
                             ))}</p>
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                                         <h3>開発期間</h3>
                                         <div className="project-sub">{startDate} ~ {endDate}</div>
                                     </div>
                                 </div>
                                 <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                                         <h3>Skill</h3>
                                         <div className={Styles.sub}>
                                             <div className="flex flex-wrap items-start mt-2 ">
@@ -87,7 +87,7 @@ export default function ProjectDetail() {
                                     </div>
                                 </div>
                                 <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                                         <h3>目的</h3>
                                         {purpose.map((pp) => (
                                             <li className="project-sub" key={pp.id}>{pp.name}</li>
@@ -95,7 +95,7 @@ export default function ProjectDetail() {
                                     </div>
                                 </div>
                                 <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                                         <h3>改善点 / 今後の目標</h3>
                                         {improvements.map((pp) => (
                                             <li className="project-sub text-left" key={pp.id}>{pp.name}</li>

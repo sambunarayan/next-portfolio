@@ -9,7 +9,7 @@ export default function Monitoring({ seqNum }) {
             return (
                 <>
                     <div className={Style.itemdiv}>
-                        <div className="flex flex-col mb-2 lg:items-start items-center">
+                        <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                             <h3>Monitoring</h3>
                             <div className="project-sub text-left">
                                 Prometheusでサーバーの情報を収集し、Grafanaで視覚化しました。<br />

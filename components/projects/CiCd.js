@@ -8,7 +8,7 @@ export default function CiCd({ seqNum }) {
         case "1":
             return (
                 <div className={Style.itemdiv}>
-                    <div className="flex flex-col mb-2 lg:items-start items-center">
+                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                         <h3>CI/CD</h3>
                         <div className="project-sub text-left">
                             Jenkinsを利用してビルドとデプロイを行います。<br />
