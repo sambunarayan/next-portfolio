@@ -5,8 +5,13 @@ import Image from 'next/image';
 import { TOKEN, CAREER_DATABASE_ID } from '../config';
 
 export default function Career({ projects }) {
-    const imageSrc = projects.results[0].cover.file?.url || projects.results[0].cover.external.url
-
+    const imageSrc = projects.results[0].cover.file?.url || projects.results[0].cover.external.url;
+    const myName = projects.results[0].properties.FullName.rich_text[0].plain_text;
+    const myAge = projects.results[0].properties.Age.rich_text[0].plain_text;
+    const myAdress = projects.results[0].properties.Adress.rich_text[0].plain_text;
+    const myEMail = projects.results[0].properties.Email.email;
+    const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
+    console.log(myName);
     return <>
         <Head>
             <title>Jeus portfolio</title>
@@ -35,7 +40,7 @@ export default function Career({ projects }) {
                                 Name
                             </li>
                             <div className="flex-grow pl-6">
-                                <p className="leading-relaxed text-base">JAEWOO KIM</p>
+                                <p className="leading-relaxed text-base">{myName}</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
@@ -43,7 +48,7 @@ export default function Career({ projects }) {
                                 Birth
                             </li>
                             <div className="flex-grow pl-6">
-                                <p className="leading-relaxed text-base">1989年生まれ</p>
+                                <p className="leading-relaxed text-base">{myAge}</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
@@ -51,7 +56,7 @@ export default function Career({ projects }) {
                                 City
                             </li>
                             <div className="flex-grow pl-6">
-                                <p className="leading-relaxed text-base">Fukuoka, Japan</p>
+                                <p className="leading-relaxed text-base">{myAdress}</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
@@ -59,7 +64,7 @@ export default function Career({ projects }) {
                                 e-mail
                             </li>
                             <div className="flex-grow pl-6">
-                                <p className="leading-relaxed text-base">soyou30257@gmail.com</p>
+                                <p className="leading-relaxed text-base">{myEMail}</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
@@ -67,7 +72,7 @@ export default function Career({ projects }) {
                                 Education
                             </li>
                             <div className="flex-grow pl-6">
-                                <p className="leading-relaxed text-base">Busan University of Foreign Studies.</p>
+                                <p className="leading-relaxed text-base">{myEducation}</p>
                             </div>
                         </div>
                         <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-0 mt-10">Career</h1>
