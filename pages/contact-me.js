@@ -1,10 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Layout from '@/components/layout';
-import React from 'react'
-import Lottie from 'react-lottie-player'
-import lottieJson from '/public/contact-animate.json'
+import React from 'react';
+import Lottie from 'react-lottie-player';
+import lottieJson from '/public/contact-animate.json';
+import { TOKEN, CAREER_DATABASE_ID } from '../config';
 
-export default function ContactMe() {
+export default function ContactMe({ projects }) {
     return (
         <div>
             <Layout>
@@ -27,11 +28,31 @@ export default function ContactMe() {
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Contact me !
                                 <br className="hidden lg:inline-block" />
                             </h1>
-                            <p className="mb-8 leading-relaxed">e-mail : soyou30257@gmail.com</p>
+                            <p className="mb-8 leading-relaxed">e-mail : {projects.results[0].properties.Email.email}</p>
                         </div>
                     </div>
                 </section>
             </Layout>
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const options = {
+        method: 'POST',
+        headers: {
+            accept: 'application/json',
+            'Notion-Version': '2022-06-28',
+            'content-type': 'application/json',
+            Authorization: `Bearer ${TOKEN}`
+        },
+        body: JSON.stringify({ page_size: 100 })
+    };
+
+    const res = await fetch(`https://api.notion.com/v1/databases/${CAREER_DATABASE_ID}/query`, options);
+    const projects = await res.json();
+
+    return {
+        props: { projects }, // will be passed to the page component as props
+    }
 }
