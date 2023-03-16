@@ -121,6 +121,19 @@ export default function Career({ projects }) {
                                     <h3>Token管理中継サーバー開発</h3>
                                     <p className="about-period pl-4">2021年 - 2022年</p><br />
                                     <div className="mb-2">
+                                        <li className="about-me-item">言語・環境</li>
+                                        <div className="about-me-sub">
+                                            Back-end：JakartaEE, JDK11<br />
+                                            Batch : shell, Helidon SE, JDK11<br />
+                                            DB：Oracle<br />
+                                            Server：RHEL, Kubernetes, payara, Kafka<br />
+                                            CI/CD：Jenkins, JFrog, Harness, Harbor<br />
+                                            Performance Test：Apache JMeter<br />
+                                            Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br/>
+                                            Version control：Bitbucket
+                                        </div>
+                                    </div>
+                                    <div className="mb-2">
                                         <li className="about-me-item">カードブランド（VISA, MasterCard）との連携フロー理解</li>
                                         <div className="about-me-sub">
                                             Token発行・更新・削除管理フロー<br />
@@ -155,6 +168,20 @@ export default function Career({ projects }) {
                                     <h3>社内メンテナンス用Webサイト開発</h3>
                                     <p className="about-period pl-4">2023年 - 現在</p><br />
                                     <div className="mb-2">
+                                        <li className="about-me-item">言語・環境</li>
+                                        <div className="about-me-sub">
+                                            Front-end：JSF, CSS, Javascript, XHTML<br />
+                                            Back-end：JakartaEE, JDK11<br />
+                                            Batch : shell, JakartaEE, JDK11<br />
+                                            DB：Oracle<br />
+                                            Server：RHEL, Kubernetes, payara<br />
+                                            CI/CD：Jenkins, JFROG, Harness, Harbor<br />
+                                            Performance Test：Apache JMeter<br />
+                                            Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br/>
+                                            Version control：Bitbucket
+                                        </div>
+                                    </div>
+                                    <div className="mb-2">
                                         <li className="about-me-item">要件整理・調整</li>
                                         <div className="about-me-sub">
                                             企画部署とコミュニケーションをとり、<br />
@@ -163,6 +190,12 @@ export default function Career({ projects }) {
                                     </div>
                                     <div className="mb-2">
                                         <li className="about-me-item">基本設計・詳細設計</li>
+                                        <div className="about-me-sub">
+                                            新規画面のレイアウトとイベント処理、バックエンドAPI、バッチ設計、テーブル設計など、<br/>
+                                            一連の処理全般を設計<br/>
+                                            ユーザビリティーを考慮した画面設計<br/>
+                                            データ安全性、処理性能など予期せぬリスクを考慮したバックエンドとバッチ設計<br/>
+                                        </div>
                                     </div>
                                     <div className="mb-2">
                                         <li className="about-me-item">テックリーダー</li>
@@ -171,6 +204,7 @@ export default function Career({ projects }) {
                                             コードレビュー担当<br />
                                             開発タスク整理と割当て、進捗確認
                                             外国籍チームとのコミュニケーションロース対策検討<br />
+                                            各工程の環境準備（DEV、STG、UAT環境など）
                                         </div>
                                     </div>
                                     <div className="mb-2">
