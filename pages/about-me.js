@@ -102,14 +102,12 @@ export default function Career({ projects }) {
                                             IFRS（財務国際基準）対応
                                         </div>
                                     </div>
-
                                     <div className="mb-2">
                                         <li className="about-me-item">請求バッチシステム開発</li>
                                         <div className="about-me-sub">
                                             請求処理性能改善（処理時間短縮）
                                         </div>
                                     </div>
-
                                     <div className="mb-2">
                                         <li className="about-me-item">少額保険システム開発</li>
                                         <div className="about-me-sub">
