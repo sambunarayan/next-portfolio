@@ -19,7 +19,7 @@ export default function Hero() {
                     趣味としてReactやNext.jsなどのフロントエンド技術の勉強も行っています。
                 </p>
                 <p className="mb-8 leading-relaxed">
-                    今後、～～～エンジニアになりたいっす！
+                    今後、なんでもできるフルスタックエンジニアになりたいです！
                 </p>
                 <div className="flex justify-center">
                     <Link href="/projects" legacyBehavior>
