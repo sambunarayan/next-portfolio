@@ -50,7 +50,7 @@ export async function getStaticProps() {
             "sorts": [
                 {
                     "property": "SeqNum",
-                    "direction": "ascending"
+                    "direction": "descending"
                 }
             ]
         })
