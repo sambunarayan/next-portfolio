@@ -8,8 +8,8 @@ export default function SkillProgress({ area, skill }) {
     if (skill.properties.Image.files.length > 0) {
         img = <Image
             src={skill.properties.Image.files[0].file.url}
-            width="100"
-            height="60"
+            width={100}
+            height={60}
             layout="responsive"
             objectFit="contain"
             alt={"image"}></Image>;

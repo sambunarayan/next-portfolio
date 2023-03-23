@@ -4,7 +4,6 @@ import { TOKEN, SKILL_DATABASE_ID } from '../config';
 import SkillProgress from '../components/skills/skill-progress';
 
 export default function Skill({ skillData }) {
-    const map = [];
     return (
         <Layout>
             <Head>
