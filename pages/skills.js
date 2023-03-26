@@ -39,6 +39,12 @@ export default function Skill({ skillData }) {
                             <SkillProgress area="server" skill={s} />
                         ))}
                     </div>
+                    <h3 className="sm:text-2xl title-font mb-2">Database</h3>
+                    <div className="flex flex-wrap -m-4 mb-1">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="db" skill={s} />
+                        ))}
+                    </div>
                     <h3 className="sm:text-2xl title-font mb-2">CI / CD</h3>
                     <div className="flex flex-wrap -m-4 mb-1">
                         {skillData.results.map((s) => (
