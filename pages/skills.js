@@ -17,42 +17,48 @@ export default function Skill({ skillData }) {
             </Head>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">SKILLS</h1>
+                    <div className="flex flex-wrap w-full mt-7 mb-30 flex-col items-center text-center">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mt-7 mb-3 text-gray-900">SKILLS</h1>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">得意なスキル・興味を持っているスキルなどをまとめてみました！</p>
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">Front-end</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mb-3 text-lime-600 dark:text-lime-200">Front-end</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="front-end" skill={s} />
                         ))}
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">Back-end</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Back-end</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="back-end" skill={s} />
                         ))}
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">Server</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Server</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="server" skill={s} />
                         ))}
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">Database</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Database</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="db" skill={s} />
                         ))}
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">CI / CD</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">CI / CD</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="cicd" skill={s} />
                         ))}
                     </div>
-                    <h3 className="sm:text-2xl title-font mb-2">Communication tools</h3>
-                    <div className="flex flex-wrap -m-4 mb-1">
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Version control</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="version-control" skill={s} />
+                        ))}
+                    </div>
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Communication tools</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (
                             <SkillProgress area="communication-tools" skill={s} />
                         ))}

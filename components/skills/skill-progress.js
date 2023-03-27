@@ -22,7 +22,7 @@ export default function SkillProgress({ area, skill }) {
     }
     return (
         <>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
+            <div className="xl:w-1/3 md:w-1/2 p-1">
                 <div className="border border-gray-200 p-6 rounded-lg">
                     <div className="inline-flex">
                         <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
@@ -40,7 +40,7 @@ export default function SkillProgress({ area, skill }) {
 
 const description = (description) => {
     if (description === null || description.rich_text.length === 0) {
-        return ;
+        return;
     }
     return (
         <>
@@ -53,7 +53,7 @@ const description = (description) => {
 
 const levelDiv = (level) => {
     if (level === null || level.multi_select.length === 0) {
-        return ;
+        return;
     }
     return (
         <>
