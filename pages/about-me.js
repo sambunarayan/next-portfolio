@@ -11,7 +11,6 @@ export default function Career({ projects }) {
     const myAdress = projects.results[0].properties.Adress.rich_text[0].plain_text;
     const myEMail = projects.results[0].properties.Email.email;
     const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
-    console.log(myName);
     return <>
         <Head>
             <title>Jeus portfolio</title>
