@@ -8,7 +8,7 @@ import postImage2 from '/public/images/post2.png';
 import postImage3 from '/public/images/post3.png';
 import afterPostTimeLineImage from '/public/images/after-post-time-line.png';
 
-export default function Feature({ seqNum, features }) {
+export default function Feature({ seqNum }) {
     switch (seqNum) {
         case "1":
             return (
