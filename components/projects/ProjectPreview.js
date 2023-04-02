@@ -7,33 +7,11 @@ export default function ProjectPreview({ data }) {
     const start_date = data.properties.WorkPeriod.date.start
     const end_date = data.properties.WorkPeriod.date.end
     const intro = data.properties.Intro.rich_text[0].plain_text;
-    const detail_text = data.properties.Description.rich_text[0].plain_text
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;
-    const github = data.properties.Github.url;
-    const purpose = data.properties.Purpose.multi_select;
-    const improvements = data.properties.Improvements.multi_select;
-    const system_structure = data.properties.StructureImage;
-    const structureExplain = data.properties.StructureExplain.multi_select;
-    const features = data.properties.Features;
 
-    const query = {
-        seqNum: seqNum,
-        title: title,
-        start_date: start_date,
-        end_date: end_date,
-        detail_text: detail_text,
-        imageSrc: imageSrc,
-        tags: tags,
-        github: github,
-        purpose: purpose,
-        improvements: improvements,
-        system_structure: system_structure,
-        structureExplain: structureExplain,
-        features: features
-    };
     return (
-        <Link href={{ pathname: "../../project-details", query: {post: JSON.stringify(query)} }} as="project-details" legacyBehavior>
+        <Link href={`../../project-details/${seqNum}`} legacyBehavior>
             <div className="project-card p-5 md:w-1/4 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
                     <Image

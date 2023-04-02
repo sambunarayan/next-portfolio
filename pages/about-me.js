@@ -11,7 +11,6 @@ export default function Career({ projects }) {
     const myAdress = projects.results[0].properties.Adress.rich_text[0].plain_text;
     const myEMail = projects.results[0].properties.Email.email;
     const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
-    console.log(myName);
     return <>
         <Head>
             <title>Jeus portfolio</title>
@@ -127,7 +126,7 @@ export default function Career({ projects }) {
                                             Back-end：JakartaEE, JDK11<br />
                                             Batch : shell, Helidon SE, JDK11<br />
                                             DB：Oracle<br />
-                                            Server：RHEL, Kubernetes, payara, Kafka<br />
+                                            Server：RHEL, Kubernetes, payara, Kafka, Kong gateway<br />
                                             CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                             Performance Test：Apache JMeter<br />
                                             Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
@@ -175,9 +174,8 @@ export default function Career({ projects }) {
                                             Back-end：JakartaEE, JDK11<br />
                                             Batch : shell, JakartaEE, JDK11<br />
                                             DB：Oracle<br />
-                                            Server：RHEL, Kubernetes, payara<br />
-                                            CI/CD：Jenkins, JFROG, Harness, Harbor<br />
-                                            Performance Test：Apache JMeter<br />
+                                            Server：RHEL, Kubernetes, Payara, Apache server(reverse proxy server)<br />
+                                            CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                             Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
                                             Version control：Bitbucket
                                         </div>

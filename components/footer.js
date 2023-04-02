@@ -10,7 +10,7 @@ export default function Footer() {
                             <span className="ml-3 text-xl">Jaewoo's portfolio</span>
                         </a>
                     </Link>
-                    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Jeus Kim All rights reserved.</p>
+                    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Jaewoo Kim All rights reserved.</p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <Link href="https://leetcode.com/soyou30257/" legacyBehavior>
                             <a className="ml-3 text-gray-500">
