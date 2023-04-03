@@ -2,10 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DarkModeToggleButton from './dark-mode-toggle-button';
 import logoImg from '/public/favicon.ico';
+import PageHead from '@/components/PageHead';
 
 export default function Header() {
     return (
         <>
+            <PageHead/>
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <Link href="/" legacyBehavior>

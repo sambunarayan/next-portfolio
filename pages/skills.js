@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Layout from '@/components/layout';
 import { TOKEN, SKILL_DATABASE_ID } from '../config';
 import SkillProgress from '../components/skills/skill-progress';
@@ -6,15 +5,6 @@ import SkillProgress from '../components/skills/skill-progress';
 export default function Skill({ skillData }) {
     return (
         <Layout>
-            <Head>
-                <title>Jeus portfolio</title>
-                <meta property='og:type' content="website"/>
-                <meta property='og:title' content="Portfolio of Jaewoo Kim (Jeus Kim)"/>
-                <meta property='og:url' content="https://jeus-portfolio.vercel.app/"/>
-                <meta property='og:description' content="This is Jaewoo Kim's Portfolio web page."/>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mt-7 mb-30 flex-col items-center text-center">
