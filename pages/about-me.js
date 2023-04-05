@@ -1,5 +1,4 @@
 import Layout from '@/components/layout';
-import Head from 'next/head';
 import Styles from '@/styles/aboutme.module.css';
 import Image from 'next/image';
 import { TOKEN, CAREER_DATABASE_ID } from '../config';
@@ -12,15 +11,6 @@ export default function Career({ projects }) {
     const myEMail = projects.results[0].properties.Email.email;
     const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
     return <>
-        <Head>
-            <title>Jeus portfolio</title>
-            <meta property='og:type' content="website" />
-            <meta property='og:title' content="Portfolio of Jaewoo Kim (Jeus Kim)" />
-            <meta property='og:url' content="https://jeus-portfolio.vercel.app/" />
-            <meta property='og:description' content="This is Jaewoo Kim's Portfolio web page." />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
         <Layout>
             <section className="text-gray-600 body-font mb-10">
                 <div className="container px-5 py-10 mb-10 mx-auto flex flex-wrap">

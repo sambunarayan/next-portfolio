@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DarkModeToggleButton from './dark-mode-toggle-button';
 import logoImg from '/public/favicon.ico';
+import PageHead from '@/components/PageHead';
 
 export default function Header() {
     return (

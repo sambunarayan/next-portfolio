@@ -6,13 +6,16 @@ export default function SkillProgress({ area, skill }) {
     }
     var img;
     if (skill.properties.Image.files.length > 0) {
-        img = <Image
+        img = 
+        <div className="dark:rounded-full dark:bg-indigo-50 pb-2 pt-2">
+        <Image
+            
             src={skill.properties.Image.files[0].file.url}
             width={100}
             height={60}
             layout="responsive"
             objectFit="contain"
-            alt={"image"}></Image>;
+            alt={"image"}></Image></div>;
     } else {
         img = <svg className="dark:rounded-full dark:bg-indigo-50" width="100" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 16.3333V21H13L19 15V14H14.3333C13.2334 14 12.6834 14 12.3417 14.3417C12 14.6834 12 15.2334 12 16.3333Z" fill="#2A4157" fillOpacity="0.24" />
