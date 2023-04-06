@@ -29,13 +29,21 @@ export default function Career({ projects }) {
                     <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                         <div className="flex flex-col mb-2 lg:items-start items-center">
                             <li className="about-me-item">
-                                Name
+                                氏名
                             </li>
                             <div className="flex-grow pl-6">
                                 <p className="leading-relaxed text-base">{myName}</p>
                             </div>
                         </div>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
+                            <li className="about-me-item">
+                                所属
+                            </li>
+                            <div className="flex-grow pl-6">
+                                <p className="leading-relaxed text-base">福岡第３オフィス</p>
+                            </div>
+                        </div>
+                        {/* <div className="flex flex-col mb-2 lg:items-start items-center">
                             <li className="about-me-item">
                                 Birth
                             </li>
@@ -66,7 +74,7 @@ export default function Career({ projects }) {
                             <div className="flex-grow pl-6">
                                 <p className="leading-relaxed text-base">{myEducation}</p>
                             </div>
-                        </div>
+                        </div> */}
                         <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-0 mt-10">Career</h1>
                         <div className="flex flex-col mb-2 lg:items-start items-center">
                             <div className={Styles.cbody}>
@@ -77,11 +85,11 @@ export default function Career({ projects }) {
                                     </p>
                                     <br />
                                     <div className="text-slate-600 dark:text-slate-400">
-                                        ソフトウェアの開発・販売、システムインテグレーションなどを行う企業です。<br />
+                                        {/* ソフトウェアの開発・販売、システムインテグレーションなどを行う企業です。<br />
                                         <br />
                                         金融システム開発部署に所属し、クレジットカードシステム開発に携わっています。<br />
                                         2017/1から顧客のクレジットカードシステム開発に携わっており、<br />
-                                        顧客のニアショア開発拠点（自社）にてWebAPI、Batch、社内Webサイトなど、主にサーバーサイド開発を行っています。<br />
+                                        顧客のニアショア開発拠点（自社）にてWebAPI、Batch、社内Webサイトなど、主にサーバーサイド開発を行っています。<br /> */}
                                     </div>
                                     <br />
                                     <hr />

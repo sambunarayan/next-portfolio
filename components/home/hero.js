@@ -9,7 +9,7 @@ export default function Hero() {
                     <br className="hidden lg:inline-block" />
                 </h1>
                 <p className="mb-4  leading-relaxed">
-                    サーバーサイドエンジニアになりたいSIerです。<br/>
+                    スペシャリストになりたいエンジニアです。<br/>
                     エンジニアとして毎日成長を目指して１日１コミットを実施中です。<br/>
                     勉強した内容や知りえた知識、個人プロジェクトをGit hubにコミットしています。
                 </p>
