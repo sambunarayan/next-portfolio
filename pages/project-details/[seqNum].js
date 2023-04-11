@@ -8,6 +8,7 @@ import SystemStructure from '@/components/projects/SystemStructure';
 import Feature from '@/components/projects/Feature';
 import CiCd from '@/components/projects/CiCd';
 import Monitoring from '@/components/projects/Monitoring';
+import Url from '@/components/projects/Url';
 import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
 
 export default function ProjectDetail({ project }) {
@@ -19,6 +20,7 @@ export default function ProjectDetail({ project }) {
     const detail_text = data.properties.Description.rich_text[0].plain_text
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;
+    const webPagUrl = data.properties.WebPageURL?.url || null;
     const github = data.properties.Github.url;
     const purpose = data.properties.Purpose.multi_select;
     const improvements = data.properties.Improvements.multi_select;
@@ -79,6 +81,7 @@ export default function ProjectDetail({ project }) {
                                         </div>
                                     </div>
                                 </div>
+                                <Url id={`Url ${seqNum}`} webPageUrl={webPagUrl} />
                                 <div className={Styles.itemdiv}>
                                     <div className="flex flex-col mb-2 lg:items-start items-center">
                                         <h3>Github url</h3>
