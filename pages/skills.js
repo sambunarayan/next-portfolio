@@ -6,8 +6,8 @@ export default function Skill({ skillData }) {
     return (
         <Layout>
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap w-full mt-7 mb-30 flex-col items-center text-center">
+                <div className="container px-5 mb-5 mx-auto">
+                    <div className="flex flex-wrap w-full mt-2 mb-10 flex-col items-center text-center">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mt-7 mb-3 text-gray-900">SKILLS</h1>
                         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">得意なスキル・興味を持っているスキルなどをまとめてみました！</p>
                     </div>

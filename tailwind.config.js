@@ -11,6 +11,9 @@ module.exports = {
   darkMode:'class',
   theme: {
     extend: {},
+    container: {
+      padding: '2rem',
+    },
     screens: {
       sm: '640px',
       md: '768px',

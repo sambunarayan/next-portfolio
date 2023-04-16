@@ -2,6 +2,15 @@ import Layout from '@/components/layout';
 import Link from 'next/link';
 
 export default function Wiki() {
+    const styles = {
+        layout: {
+            display: 'flex',
+            width: '100%',
+            height: '100%',
+            flexDirection: 'column',
+        },
+    }
+    
     return (
         <Layout>
             <section className="text-gray-600 body-font">
