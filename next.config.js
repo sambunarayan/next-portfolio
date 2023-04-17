@@ -7,7 +7,6 @@ const nextConfig = {
       'images.unsplash.com',
       's3.us-west-2.amazonaws.com'
     ]
-  }
+  },
 }
-
 module.exports = nextConfig

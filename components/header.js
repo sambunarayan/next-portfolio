@@ -2,13 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DarkModeToggleButton from './dark-mode-toggle-button';
 import logoImg from '/public/favicon.ico';
-import PageHead from '@/components/PageHead';
 
 export default function Header() {
     return (
         <>
-            <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <header className="sticky inset-x-0 top-0 text-gray-600 body-font bg-slate-50 dark:bg-slate-900">
+                <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
                     <Link href="/" legacyBehavior>
                         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                             <Image
@@ -33,6 +32,9 @@ export default function Header() {
                         </Link>
                         <Link href="/projects" legacyBehavior>
                             <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Project</a>
+                        </Link>
+                        <Link href="/wiki" legacyBehavior>
+                            <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Wiki</a>
                         </Link>
                         <Link href="/contact-me" legacyBehavior>
                             <a className="mr-5 hover:text-gray-900 dark:text-slate-400 dark:hover:text-yellow-300">Contact</a>
