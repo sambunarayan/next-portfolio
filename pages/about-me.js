@@ -1,7 +1,7 @@
 import Layout from '@/components/layout';
 import Styles from '@/styles/aboutme.module.css';
 import Image from 'next/image';
-import { TOKEN, CAREER_DATABASE_ID } from '../config';
+import { TOKEN, CAREER_DATABASE_ID } from '@/config';
 
 export default function Career({ projects }) {
     const imageSrc = projects.results[0].cover.file?.url || projects.results[0].cover.external.url;
