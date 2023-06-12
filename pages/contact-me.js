@@ -2,7 +2,7 @@ import Layout from '@/components/layout';
 import React from 'react';
 import Lottie from 'react-lottie-player';
 import lottieJson from '/public/contact-animate.json';
-import { TOKEN, CAREER_DATABASE_ID } from '../config';
+import { TOKEN, CAREER_DATABASE_ID } from '@/config';
 
 export default function ContactMe({ projects }) {
     return (

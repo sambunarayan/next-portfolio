@@ -16,7 +16,7 @@ export default function ProjectDetail({ project }) {
     const seqNum = data.properties.SeqNum.rich_text[0].text.content;
     const title = data.properties.名前.title[0].plain_text
     const start_date = data.properties.WorkPeriod.date.start
-    const end_date = data.properties.WorkPeriod.date.end
+    const end_date = data.properties.WorkPeriod.date.end?end:"開発中";
     const detail_text = data.properties.Description.rich_text[0].plain_text
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;

@@ -1,6 +1,6 @@
 import Layout from '@/components/layout';
-import { TOKEN, PROJECTS_DATABASE_ID } from '../config';
-import ProjectPreview from '../components/projects/ProjectPreview';
+import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
+import ProjectPreview from '@/components/projects/ProjectPreview';
 
 export default function Projects({ projects }) {
     return (
