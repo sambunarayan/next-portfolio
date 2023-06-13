@@ -9,6 +9,7 @@ import Feature from '@/components/projects/Feature';
 import CiCd from '@/components/projects/CiCd';
 import Monitoring from '@/components/projects/Monitoring';
 import Url from '@/components/projects/Url';
+import Improvements from '@/components/projects/Improvements';
 import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
 
 export default function ProjectDetail({ project }) {
@@ -16,14 +17,14 @@ export default function ProjectDetail({ project }) {
     const seqNum = data.properties.SeqNum.rich_text[0].text.content;
     const title = data.properties.名前.title[0].plain_text
     const start_date = data.properties.WorkPeriod.date.start
-    const end_date = data.properties.WorkPeriod.date.end?end:"開発中";
+    const end_date = data.properties.WorkPeriod.date.end;
     const detail_text = data.properties.Description.rich_text[0].plain_text
     const imageSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.タグ.multi_select;
     const webPagUrl = data.properties.WebPageURL?.url || null;
     const github = data.properties.Github.url;
     const purpose = data.properties.Purpose.multi_select;
-    const improvements = data.properties.Improvements.multi_select;
+    const improv = data.properties.Improvements.multi_select;
     const system_structure = data.properties.StructureImage;
     const structureExplain = data.properties.StructureExplain.multi_select;
     const features = data.properties.Features;
@@ -64,7 +65,7 @@ export default function ProjectDetail({ project }) {
                                 <div className={Styles.itemdiv}>
                                     <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
                                         <h3>開発期間</h3>
-                                        <div className="project-sub">{start_date} ~ {end_date}</div>
+                                        <div className="project-sub">{start_date} ~ {end_date ? end_date : "開発中"}</div>
                                     </div>
                                 </div>
                                 <div className={Styles.itemdiv}>
@@ -100,14 +101,7 @@ export default function ProjectDetail({ project }) {
                                         ))}
                                     </div>
                                 </div>
-                                <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
-                                        <h3>改善点 / 今後の目標</h3>
-                                        {improvements.map((pp) => (
-                                            <li className="project-sub text-left" key={pp.id}>{pp.name}</li>
-                                        ))}
-                                    </div>
-                                </div>
+                                <Improvements id={improv.id} improvements={improv} />
                                 <ServerSpec id={`ServerSpec ${seqNum}`} seqNum={seqNum} />
                                 <SystemStructure id={system_structure.id} files={system_structure.files} explains={structureExplain} />
                                 <Feature id={features.id} seqNum={seqNum} features={features.multi_select} />
