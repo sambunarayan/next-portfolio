@@ -10,6 +10,7 @@ export default function Career({ projects }) {
     const myAdress = projects.results[0].properties.Adress.rich_text[0].plain_text;
     const myEMail = projects.results[0].properties.Email.email;
     const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
+    
     return <>
         <Layout>
             <section className="text-gray-600 body-font mb-10">
