@@ -10,6 +10,7 @@ import CiCd from '@/components/projects/CiCd';
 import Monitoring from '@/components/projects/Monitoring';
 import Url from '@/components/projects/Url';
 import Improvements from '@/components/projects/Improvements';
+import Purpose from '@/components/projects/Purpose';
 import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
 
 export default function ProjectDetail({ project }) {
@@ -93,14 +94,7 @@ export default function ProjectDetail({ project }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
-                                        <h3>目的</h3>
-                                        {purpose.map((pp) => (
-                                            <li className="project-sub" key={pp.id}>{pp.name}</li>
-                                        ))}
-                                    </div>
-                                </div>
+                                <Purpose id={seqNum} purp={purpose} />
                                 <Improvements id={improv.id} improvements={improv} />
                                 <ServerSpec id={`ServerSpec ${seqNum}`} seqNum={seqNum} />
                                 <SystemStructure id={system_structure.id} files={system_structure.files} explains={structureExplain} />
