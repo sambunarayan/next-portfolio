@@ -11,6 +11,7 @@ import Monitoring from '@/components/projects/Monitoring';
 import Url from '@/components/projects/Url';
 import Improvements from '@/components/projects/Improvements';
 import Purpose from '@/components/projects/Purpose';
+import GitUrl from '@/components/projects/GitUrl';
 import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
 
 export default function ProjectDetail({ project }) {
@@ -84,16 +85,7 @@ export default function ProjectDetail({ project }) {
                                     </div>
                                 </div>
                                 <Url id={`Url ${seqNum}`} webPageUrl={webPagUrl} />
-                                <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center">
-                                        <h3>Github url</h3>
-                                        <div className={Styles.sub}>
-                                            <Link href={github} legacyBehavior>
-                                                <a target="_blank">{github}</a>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                <GitUrl id={seqNum} gitUrl={github} />
                                 <Purpose id={seqNum} purp={purpose} />
                                 <Improvements id={improv.id} improvements={improv} />
                                 <ServerSpec id={`ServerSpec ${seqNum}`} seqNum={seqNum} />
