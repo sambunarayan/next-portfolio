@@ -1,7 +1,7 @@
 import Styles from '@/styles/aboutme.module.css';
 
 export default function Improvements({ improvements }) {
-    if (improvements.length != 0) {
+    if (improvements.length) {
         return (
             <div className={Styles.itemdiv}>
                 <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">

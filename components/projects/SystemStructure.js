@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Styles from '@/styles/aboutme.module.css';
 
 export default function SystemStructure({ files, explains }) {
-    if (files.length !== 0) {
+    if (files.length) {
         return (
             <div className={Styles.itemdiv}>
                 <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
