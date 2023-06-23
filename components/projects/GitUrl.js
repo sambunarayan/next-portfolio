@@ -5,6 +5,7 @@ export default function GitUrl({ gitUrl }) {
     if (gitUrl) {
         return (<></>);
     }
+    
     return (
         <div className={Styles.itemdiv}>
             <div className="flex flex-col mb-2 lg:items-start items-center">
