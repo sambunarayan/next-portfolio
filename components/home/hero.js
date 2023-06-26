@@ -9,14 +9,17 @@ export default function Hero() {
                     <br className="hidden lg:inline-block" />
                 </h1>
                 <p className="mb-4  leading-relaxed">
-                    サーバーサイドエンジニアになりたいSIerです。<br/>
-                    エンジニアとして毎日成長を目指して１日１コミットを実施中です。<br/>
-                    勉強した内容や知りえた知識、個人プロジェクトをGit hubにコミットしています。
+                    何かを学ぶことが大好きなエンジニアです。<br />
+                    課題を解決して知識が深まることが好きです。<br />
                 </p>
                 <p className="mb-4 leading-relaxed">
-                    得意なのはサーバーサイドの開発ですが、<br/>
-                    システム全般のフローを理解したく、最近フロントエンド開発にも興味を持ち始め、<br/>
-                    趣味としてReactやNext.jsなどのフロントエンド技術の勉強も行っています。
+                    主にWeb server・Batch serverなどのServer APIを開発するサーバーサイドエンジニアです。<br />
+                    一番得意な言語はJavaで普段Kubernetesやpayara、Dockerなどを使って開発しています。
+                </p>
+                <p className="mb-8 leading-relaxed">
+                    最近、Next.jsにハマりNext.jsを使ってウェブサイトを開発することを楽しんでいます。<br />
+                    またAWSの勉強も始めていて、
+                    今後フロントはNext.js、バックエンドはSpring、配布はAWSのWebApplicationを開発することが目標です。
                 </p>
                 <p className="mb-8 leading-relaxed">
                     今後、なんでもできるフルスタックエンジニアになりたいです！
