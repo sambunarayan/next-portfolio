@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/components/layout';
 import Head from 'next/head';
@@ -12,6 +11,7 @@ import Url from '@/components/projects/Url';
 import Improvements from '@/components/projects/Improvements';
 import Purpose from '@/components/projects/Purpose';
 import GitUrl from '@/components/projects/GitUrl';
+import Skill from '@/components/projects/Skill';
 import { TOKEN, PROJECTS_DATABASE_ID } from '@/config';
 
 export default function ProjectDetail({ project }) {
@@ -70,20 +70,7 @@ export default function ProjectDetail({ project }) {
                                         <div className="project-sub">{start_date} ~ {end_date ? end_date : "開発中"}</div>
                                     </div>
                                 </div>
-                                <div className={Styles.itemdiv}>
-                                    <div className="flex flex-col mb-2 lg:items-start items-center dark:text-slate-300">
-                                        <h3>Skill</h3>
-                                        <div className={Styles.sub}>
-                                            <div className="flex flex-wrap items-start mt-2 ">
-                                                {tags.map((aTag) => (
-                                                    <h1 className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 m-1" key={aTag.id}>
-                                                        {aTag.name}
-                                                    </h1>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Skill id={seqNum} tags={tags} />
                                 <Url id={`Url ${seqNum}`} webPageUrl={webPagUrl} />
                                 <GitUrl id={seqNum} gitUrl={github} />
                                 <Purpose id={seqNum} purp={purpose} />
