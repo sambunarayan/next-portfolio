@@ -8,7 +8,7 @@ export default function ContactMe({ projects }) {
     return (
         <div>
             <Layout>
-                <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
+                <section className="flex h-screen flex-col items-center justify-center text-gray-600 body-font">
                     <div className="container mx-auto flex px-5 py-1 md:flex-row flex-col items-center">
                         <div className="lg:max-w-[50%] lg:w-full md:w-1/2">
                             <Lottie
