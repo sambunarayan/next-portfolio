@@ -5,15 +5,22 @@ export default function CareerProjects() {
         <section class="text-gray-600 body-font overflow-hidden">
             <div class="container px-5 py-24 mx-auto">
                 <div class="-my-8 divide-y-2 divide-gray-100">
-                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span class="font-semibold title-font text-gray-700">社内メンテナンスページ開発</span>
                             <span class="mt-1 text-gray-500 text-sm">2023年1月 - 2023年6月</span>
                         </div>
                         <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">新規メンテナンスページ開発</h2>
+                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">社内メンテナンスページ開発</h2>
                             <p class="leading-relaxed">会員管理用のため新規メンテナンスページや夜間バッチシステムを開発</p>
-                            <br/>
+                            <br />
+                            <p class="leading-relaxed">
+                                小さな社内システムではありますが、フロントからバックエンド、バッチ処理まで一連の流れを設計・開発・テストを主導した初めてのプロジェクトでした。<br />
+                                特に開発工程は、多国籍のメンバーをリードして開発を行ったため、<br />
+                                コミュニケーションロスや認識齟齬などテクニカル的な部分以外のリスクにも考慮しながらプロジェクトを進めていきましたので、<br />
+                                いろいろ学ぶことができました。<br />
+                            </p>
+                            <br />
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
                                 <div className="about-me-sub">
@@ -28,35 +35,18 @@ export default function CareerProjects() {
                                 </div>
                             </div>
                             <div className="mb-2">
-                                <li className="about-me-item">カードブランド（VISA, MasterCard）との連携フロー理解</li>
-                                <div className="about-me-sub">
-                                    Token発行・更新・削除管理フロー<br />
-                                    セキュリティ対策の理解（データ暗号化・複合化、証明書）
-                                </div>
-                            </div>
-                            <div className="mb-2">
                                 <li className="about-me-item">基本設計・詳細設計</li>
                                 <div className="about-me-sub">
-                                    Kafkaを用いて処理分散を考慮した処理フロー設計<br />
-                                    非同期処理によるステータス遷移問題を考慮した設計<br />
-                                    大量データ処理Batch設計
+                                    企画部署の方とコミュニケーションをとりながら、実現可能な部分とできない部分を切り分けて要件を整理することができました。<br />
+                                    リアルタイムアクセスに備えた大量データ登録バッチの設計やDB設計を行いました。
                                 </div>
                             </div>
                             <div className="mb-2">
                                 <li className="about-me-item">テックリーダー</li>
                                 <div className="about-me-sub">
-                                    開発関連知識共有<br />
-                                    メンバー教育（JavaEE、Kubernetes、システム構成・フローなど）<br />
-                                    コードレビュー担当<br />
-                                </div>
-                            </div>
-                            <div className="mb-2">
-                                <li className="about-me-item">負荷性能試験によるPayara web server、Kubernetes POD チューニング</li>
-                                <li className="about-me-item">Real環境障害発生時の対処手順作成</li>
-                                <div className="about-me-sub">
-                                    原因調査手順・原因判断ポイント作成<br />
-                                    データリカバリ手順・Tool作成<br />
-                                    報告ルート確認と判断基準作成
+                                    開発に必要な他部署との調整<br />
+                                    コードレビュー、チームメンバーの進捗確認・タスク管理<br />
+                                    多国籍メンバーとのコミュニケーションロス対策を講じる<br />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +59,7 @@ export default function CareerProjects() {
                         <div class="md:flex-grow">
                             <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Token管理中継サーバー開発</h2>
                             <p class="leading-relaxed">モバイルタッチ決済時に使用される各カードブランド社のTokenを管理・中継するサーバーを開発  </p>
-                            <br/>
+                            <br />
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
                                 <div className="about-me-sub">
