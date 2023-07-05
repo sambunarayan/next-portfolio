@@ -26,7 +26,7 @@ export default function Hero() {
                 </p>
                 <div className="flex justify-center">
                     <Link href="/projects" legacyBehavior>
-                        <a className="btn-project">Projectへ</a>
+                        <a className="btn-project btn-black">Projectへ</a>
                     </Link>
                 </div>
             </div>
