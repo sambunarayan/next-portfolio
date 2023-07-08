@@ -47,6 +47,7 @@ export default function CareerProjects() {
                                     開発に必要な他部署との調整<br />
                                     コードレビュー、チームメンバーの進捗確認・タスク管理<br />
                                     多国籍メンバーとのコミュニケーションロス対策を講じる<br />
+                                    
                                 </div>
                             </div>
                         </div>
