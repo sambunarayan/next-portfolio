@@ -37,7 +37,7 @@ export default function CareerProjects() {
                             <div className="mb-2">
                                 <li className="about-me-item">基本設計・詳細設計</li>
                                 <div className="about-me-sub">
-                                    企画部署の方とコミュニケーションをとりながら、実現可能な部分とできない部分を切り分けて要件を整理することができました。<br />
+                                    企画部署とコミュニケーションをとりながら、実現可能な部分とできない部分を切り分けて要件を整理することができました。<br />
                                     リアルタイムアクセスに備えた大量データ登録バッチの設計やDB設計を行いました。
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ export default function CareerProjects() {
                                 <div className="about-me-sub">
                                     開発に必要な他部署との調整<br />
                                     コードレビュー、チームメンバーの進捗確認・タスク管理<br />
-                                    多国籍メンバーとのコミュニケーションロス対策を講じる<br />
+                                    多国籍メンバーとのコミュニケーションロス対策を講じました。<br />
                                     
                                 </div>
                             </div>
