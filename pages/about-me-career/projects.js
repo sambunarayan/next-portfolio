@@ -35,6 +35,14 @@ export default function CareerProjects() {
                                 </div>
                             </div>
                             <div className="mb-2">
+                                <li className="about-me-item">テックリーダー</li>
+                                <div className="about-me-sub">
+                                    開発に必要な他部署との調整<br />
+                                    コードレビュー、チームメンバーの進捗確認・タスク管理<br />
+                                    多国籍メンバーとのコミュニケーションロス対策を講じました。<br />
+                                </div>
+                            </div>
+                            <div className="mb-2">
                                 <li className="about-me-item">基本設計・詳細設計</li>
                                 <div className="about-me-sub">
                                     企画部署とコミュニケーションをとりながら、実現可能な部分とできない部分を切り分けて要件を整理することができました。<br />
@@ -42,12 +50,17 @@ export default function CareerProjects() {
                                 </div>
                             </div>
                             <div className="mb-2">
-                                <li className="about-me-item">テックリーダー</li>
+                                <li className="about-me-item">開発・リリース</li>
                                 <div className="about-me-sub">
-                                    開発に必要な他部署との調整<br />
-                                    コードレビュー、チームメンバーの進捗確認・タスク管理<br />
-                                    多国籍メンバーとのコミュニケーションロス対策を講じました。<br />
-                                    
+                                    JSFを使用してWebPageを作成しました。<br /> 
+                                    フレームワークはJavaeeを使用し、Web application serverはPayara、reverse proxy serverはApacheを利用して開発を行いました。<br />
+                                    <br/>
+                                    また、サーバー間のデータ転送のため、SFTP転送を行うをshellを実装し、夜間バッチで定期的に稼働されるようにしました。<br/>
+                                    大量データ（2千万件）のデータをDBに登録する必要があり、性能やサーバー負荷を考慮し、<br/>
+                                    OracleのSQL Loaderの機能を利用してアクセス数の少ない夜間に稼働されるように実装しました。<br/>
+                                    旧データと登録したデータの切り替える際の負荷や整合性などの問題をありましたが、<br/>
+                                    登録データをパーティションで管理し、<br/>
+                                    シノニムのように、最新のパーティションを切り替えることで実現できました。<br/>
                                 </div>
                             </div>
                         </div>
