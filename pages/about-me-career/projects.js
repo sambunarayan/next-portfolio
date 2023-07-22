@@ -61,7 +61,7 @@ export default function CareerProjects() {
                                     <br/>
                                     特に旧データと登録したデータの切り替えるタイミングにアクセスのあった場合、データ整合性などの問題がありましたが、<br/>
                                     もう一つのテーブルを用意し、最新のパーティション情報（カーソル）を管理するように実装しました。<br/>
-                                    そうすることで、カーソル（１カラム）を更新することで一瞬で切り替えられるように実現できました。<br/>
+                                    カーソル（１カラム）を更新することで一瞬で切り替えられるように実現できました。<br/>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function CareerProjects() {
                         </div>
                         <div class="md:flex-grow">
                             <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Token管理中継サーバー開発</h2>
-                            <p class="leading-relaxed">モバイルタッチ決済時に使用される各カードブランド社のTokenを管理・中継するサーバーを開発  </p>
+                            <p class="leading-relaxed">モバイルタッチ決済時に使用される各カードブランド社（VISA、Mastercardなど）のTokenを管理・中継するサーバーを開発  </p>
                             <br />
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
@@ -93,6 +93,12 @@ export default function CareerProjects() {
                                 <div className="about-me-sub">
                                     Token発行・更新・削除管理フロー<br />
                                     セキュリティ対策の理解（データ暗号化・複合化、証明書）
+                                </div>
+                            </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">テックリーダー</li>
+                                <div className="about-me-sub">
+                                    コードレビュー、チームメンバーフォロー<br />
                                 </div>
                             </div>
                             <div className="mb-2">
