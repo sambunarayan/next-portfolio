@@ -91,7 +91,6 @@ export default function Career({ projects }) {
                                             <b>役割・ポジション</b><br />
                                             テックリーダーとして働いています。<br />
                                             社内で進行中のプロジェクトのコードレビューを行います。<br/>
-
                                         </p>
                                     </div>
                                     <br />
