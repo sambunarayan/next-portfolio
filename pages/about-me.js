@@ -73,7 +73,7 @@ export default function Career({ projects }) {
                         <div className="flex flex-col mb-2 lg:items-start items-center">
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
-                                    <h5><b>富士ソフト株式会社</b></h5>
+                                    <h4><b>富士ソフト株式会社</b></h4>
                                     <p className="about-period">
                                         2017/1~現在
                                     </p>
@@ -82,19 +82,29 @@ export default function Career({ projects }) {
                                         ソフトウェアの開発・販売、システムインテグレーションなどを行う企業です。<br />
                                         <br />
                                         金融システム開発部署に所属し、クレジットカードシステム開発に携わっています。<br />
-                                        2017/1から顧客先（クレジットカード会社）のクレジットカードシステムの開発に携わっており、<br />
+                                        2017/1から顧客先（クレジットカード会社）のクレジットカードシステムの開発に携わっており、
                                         顧客のニアショア開発拠点（自社）にてWebAPI、Batch、社内Webサイトなど、主にサーバーサイド開発を行っています。<br />
                                     </div>
                                     <div className="text-slate-600 dark:text-slate-400">
                                         <br />
                                         <p>
-                                            <b>役割・ポジション</b><br />
-                                            テックリーダーとして働いています。<br />
-                                            リーダーとして主なタスクとしては、<br />
-                                            新人や新規参画者向けの教育やテクニカルな問合せ対応、社内コードレビューなどを行っています。<br />
-                                            <br />
-                                            その他、インフラ・フロントなど他領域との協業が多くあるため、<br />
-                                            他領域への問い合わせや調整などを行っています。<br/>
+                                            <b>役割・ポジション</b><br /><br />
+                                            <li className="about-me-item">エンジニア</li>
+                                            <div className="flex-grow pl-6">
+                                                <p className="leading-relaxed text-base">
+                                                    主にサーバー側の開発を行っています。<br />
+                                                    企画部署からプロジェクトを引き受け、基本設計や詳細設計から開発、試験、リリースまで全工程に渡りプロジェクトリーダーと協力してプロジェクトを進めています。<br />
+                                                </p>
+                                            </div>
+                                            <li className="about-me-item">テックリーダー</li>
+                                            <div className="flex-grow pl-6">
+                                                <p className="leading-relaxed text-base">
+                                                    新人や新規参画者向けの教育やテクニカルな問合せ対応、社内コードレビューなどを行っています。<br />
+                                                    <br />
+                                                    その他にも、インフラ・フロントなど他領域との協業が多くあるため、<br />
+                                                    他領域への問い合わせや調整などを行っています。<br />
+                                                </p>
+                                            </div>
                                         </p>
                                     </div>
                                     <br />
@@ -103,6 +113,20 @@ export default function Career({ projects }) {
                                     <Link href="/about-me-career/projects" legacyBehavior>
                                         <a className="btn-project btn-black">プロジェクト履歴へ</a>
                                     </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={Styles.cbody}>
+                            <div className={Styles.itemdiv}>
+                                <h4><b>株式会社亜細亜情報システム</b></h4>
+                                <p className="about-period">
+                                    2014/4~2016/12
+                                </p><br />
+                                <div className="text-slate-600 dark:text-slate-400">
+                                    システムインテグレーションなどを行う企業です。<br />
+                                    <br />
+                                    顧客先に常駐して顧客のニーズに合わせて開発作業を行いました。<br />
+                                    主に銀行、クレジットカードなど金融系のプロジェクトに参画しました。
                                 </div>
                             </div>
                         </div>
