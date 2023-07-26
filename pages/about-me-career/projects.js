@@ -158,7 +158,6 @@ export default function CareerProjects() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </Layout>
