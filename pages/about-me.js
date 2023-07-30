@@ -93,7 +93,7 @@ export default function Career({ projects }) {
                                             <div className="flex-grow pl-6">
                                                 <p className="leading-relaxed text-base">
                                                     主にサーバー側の開発を行っています。<br />
-                                                    企画部署からプロジェクトを引き受け、基本設計や詳細設計から開発、試験、リリースまで全工程に渡りプロジェクトリーダーと協力してプロジェクトを進めています。<br />
+                                                    企画部署からプロジェクトを引き受け、基本設計や詳細設計から開発、試験、リリースまで全ての開発工程に携わっています。<br />
                                                 </p>
                                             </div>
                                             <li className="about-me-item">テックリーダー</li>

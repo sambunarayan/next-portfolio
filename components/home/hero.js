@@ -14,15 +14,15 @@ export default function Hero() {
                 </p>
                 <p className="mb-4 leading-relaxed">
                     主にWeb server・Batch serverなどのServer APIを開発するサーバーサイドエンジニアです。<br />
-                    一番得意な言語はJavaで普段Kubernetesやpayara、Dockerなどを使って開発しています。
+                    一番得意な言語はJavaで普段Kubernetesやpayaraなどを使って開発しています。
                 </p>
                 <p className="mb-8 leading-relaxed">
                     最近、Next.jsにハマりNext.jsを使ってウェブサイトを開発することを楽しんでいます。<br />
-                    またAWSの勉強も始めていて、
-                    今後フロントはNext.js、バックエンドはSpring、配布はAWSのWebApplicationを開発することが目標です。
+                    Next.jsやSpring, AWSなどを用いて自分のサービスを展開することが目標です。
                 </p>
                 <p className="mb-8 leading-relaxed">
-                    今後、なんでもできるフルスタックエンジニアになりたいです！
+                    変化のスピードが速いこの時代に自分のスキールもスピードに合わせて成長し続け、<br />
+                    時代に遅れないエンジニアになりたいと思います。
                 </p>
                 <div className="flex justify-center">
                     <Link href="/projects" legacyBehavior>
