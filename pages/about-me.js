@@ -1,6 +1,7 @@
 import Layout from '@/components/layout';
 import Styles from '@/styles/aboutme.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import { TOKEN, CAREER_DATABASE_ID } from '@/config';
 
 export default function Career({ projects }) {
@@ -10,6 +11,7 @@ export default function Career({ projects }) {
     const myAdress = projects.results[0].properties.Adress.rich_text[0].plain_text;
     const myEMail = projects.results[0].properties.Email.email;
     const myEducation = projects.results[0].properties.Education.rich_text[0].plain_text;
+
     return <>
         <Layout>
             <section className="text-gray-600 body-font mb-10">
@@ -71,7 +73,7 @@ export default function Career({ projects }) {
                         <div className="flex flex-col mb-2 lg:items-start items-center">
                             <div className={Styles.cbody}>
                                 <div className={Styles.itemdiv}>
-                                    <h5><b>富士ソフト株式会社</b></h5>
+                                    <h4><b>富士ソフト株式会社</b></h4>
                                     <p className="about-period">
                                         2017/1~現在
                                     </p>
@@ -80,125 +82,51 @@ export default function Career({ projects }) {
                                         ソフトウェアの開発・販売、システムインテグレーションなどを行う企業です。<br />
                                         <br />
                                         金融システム開発部署に所属し、クレジットカードシステム開発に携わっています。<br />
-                                        2017/1から顧客のクレジットカードシステム開発に携わっており、<br />
+                                        2017/1から顧客先（クレジットカード会社）のクレジットカードシステムの開発に携わっており、
                                         顧客のニアショア開発拠点（自社）にてWebAPI、Batch、社内Webサイトなど、主にサーバーサイド開発を行っています。<br />
+                                    </div>
+                                    <div className="text-slate-600 dark:text-slate-400">
+                                        <br />
+                                        <p>
+                                            <b>役割・ポジション</b><br /><br />
+                                            <li className="about-me-item">エンジニア</li>
+                                            <div className="flex-grow pl-6">
+                                                <p className="leading-relaxed text-base">
+                                                    主にサーバー側の開発を行っています。<br />
+                                                    企画部署からプロジェクトを引き受け、基本設計や詳細設計から開発、試験、リリースまで全ての開発工程に携わっています。<br />
+                                                </p>
+                                            </div>
+                                            <li className="about-me-item">テックリーダー</li>
+                                            <div className="flex-grow pl-6">
+                                                <p className="leading-relaxed text-base">
+                                                    新人や新規参画者向けの教育やテクニカルな問合せ対応、社内コードレビューなどを行っています。<br />
+                                                    <br />
+                                                    その他にも、インフラ・フロントなど他領域との協業が多くあるため、<br />
+                                                    他領域への問い合わせや調整などを行っています。<br />
+                                                </p>
+                                            </div>
+                                        </p>
                                     </div>
                                     <br />
                                     <hr />
-                                    <h3>カード基幹システム開発</h3>
-                                    <p className="about-period pl-4">2017年 - 2020年</p><br />
-
-                                    <div className="mb-2">
-                                        <li className="about-me-item">債権バッチシステム開発</li>
-                                        <div className="about-me-sub">
-                                            IFRS（財務国際基準）対応
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">請求バッチシステム開発</li>
-                                        <div className="about-me-sub">
-                                            請求処理性能改善（処理時間短縮）
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">少額保険システム開発</li>
-                                        <div className="about-me-sub">
-                                            おすすめ保険リスト取得WebAPI開発<br />
-                                            保険登録・削除API開発
-                                        </div>
-                                    </div>
-
-                                    <h3>Token管理中継サーバー開発</h3>
-                                    <p className="about-period pl-4">2021年 - 2022年</p><br />
-                                    <div className="mb-2">
-                                        <li className="about-me-item">言語・環境</li>
-                                        <div className="about-me-sub">
-                                            Back-end：JakartaEE, JDK11<br />
-                                            Batch : shell, Helidon SE, JDK11<br />
-                                            DB：Oracle<br />
-                                            Server：RHEL, Kubernetes, payara, Kafka, Kong gateway<br />
-                                            CI/CD：Jenkins, JFrog, Harness, Harbor<br />
-                                            Performance Test：Apache JMeter<br />
-                                            Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
-                                            Version control：Bitbucket
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">カードブランド（VISA, MasterCard）との連携フロー理解</li>
-                                        <div className="about-me-sub">
-                                            Token発行・更新・削除管理フロー<br />
-                                            セキュリティ対策の理解（データ暗号化・複合化、証明書）
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">基本設計・詳細設計</li>
-                                        <div className="about-me-sub">
-                                            Kafkaを用いて処理分散を考慮した処理フロー設計<br />
-                                            非同期処理によるステータス遷移問題を考慮した設計<br />
-                                            大量データ処理Batch設計
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">テックリーダー</li>
-                                        <div className="about-me-sub">
-                                            開発関連知識共有<br />
-                                            メンバー教育（JavaEE、Kubernetes、システム構成・フローなど）<br />
-                                            コードレビュー担当<br />
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">負荷性能試験によるPayara web server、Kubernetes POD チューニング</li>
-                                        <li className="about-me-item">Real環境障害発生時の対処手順作成</li>
-                                        <div className="about-me-sub">
-                                            原因調査手順・原因判断ポイント作成<br />
-                                            データリカバリ手順・Tool作成<br />
-                                            報告ルート確認と判断基準作成
-                                        </div>
-                                    </div>
-                                    <h3>社内メンテナンス用Webサイト開発</h3>
-                                    <p className="about-period pl-4">2023年 - 現在</p><br />
-                                    <div className="mb-2">
-                                        <li className="about-me-item">言語・環境</li>
-                                        <div className="about-me-sub">
-                                            Front-end：JSF, CSS, Javascript, XHTML<br />
-                                            Back-end：JakartaEE, JDK11<br />
-                                            Batch : shell, JakartaEE, JDK11<br />
-                                            DB：Oracle<br />
-                                            Server：RHEL, Kubernetes, Payara, Apache server(reverse proxy server)<br />
-                                            CI/CD：Jenkins, JFrog, Harness, Harbor<br />
-                                            Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
-                                            Version control：Bitbucket
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">要件整理・調整</li>
-                                        <div className="about-me-sub">
-                                            企画部署とコミュニケーションをとり、<br />
-                                            実現可能性を考慮した機能を調整・提案することで要件を整理
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">基本設計・詳細設計</li>
-                                        <div className="about-me-sub">
-                                            新規画面のレイアウトとイベント処理、バックエンドAPI、バッチ設計、テーブル設計など、<br />
-                                            一連の処理全般を設計<br />
-                                            ユーザビリティーを考慮した画面設計<br />
-                                            データ安全性、処理性能など予期せぬリスクを考慮したバックエンドとバッチ設計<br />
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">テックリーダー</li>
-                                        <div className="about-me-sub">
-                                            開発関連知識共有<br />
-                                            コードレビュー担当<br />
-                                            開発タスク整理と割当て、進捗確認
-                                            外国籍チームとのコミュニケーションロース対策検討<br />
-                                            各工程の環境準備（DEV、STG、UAT環境など）
-                                        </div>
-                                    </div>
-                                    <div className="mb-2">
-                                        <li className="about-me-item">JSF開発の理解</li>
-                                    </div>
+                                    <br />
+                                    <Link href="/about-me-career/projects" legacyBehavior>
+                                        <a className="btn-project btn-black">プロジェクト履歴へ</a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={Styles.cbody}>
+                            <div className={Styles.itemdiv}>
+                                <h4><b>株式会社亜細亜情報システム</b></h4>
+                                <p className="about-period">
+                                    2014/4~2016/12
+                                </p><br />
+                                <div className="text-slate-600 dark:text-slate-400">
+                                    システムインテグレーションなどを行う企業です。<br />
+                                    <br />
+                                    顧客先に常駐して顧客のニーズに合わせて開発作業を行いました。<br />
+                                    主に銀行、クレジットカードなど金融系のプロジェクトに参画しました。
                                 </div>
                             </div>
                         </div>
@@ -225,6 +153,6 @@ export async function getStaticProps() {
     const projects = await res.json();
 
     return {
-        props: { projects }, // will be passed to the page component as props
+        props: { projects },
     }
 }

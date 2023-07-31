@@ -23,6 +23,12 @@ export default function Skill({ skillData }) {
                             <SkillProgress area="back-end" skill={s} />
                         ))}
                     </div>
+                    <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Test tools</h3>
+                    <div className="flex flex-wrap m-4 mb-1">
+                        {skillData.results.map((s) => (
+                            <SkillProgress area="test-tool" skill={s} />
+                        ))}
+                    </div>
                     <h3 className="sm:text-2xl title-font mt-7 mb-3 text-lime-600 dark:text-lime-200">Server</h3>
                     <div className="flex flex-wrap m-4 mb-1">
                         {skillData.results.map((s) => (

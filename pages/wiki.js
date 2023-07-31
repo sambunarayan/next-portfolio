@@ -5,7 +5,7 @@ export default function Wiki() {
     return (
         <Layout>
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto flex flex-wrap justify-center">
+                <div className="container h-screen place-content-center mx-auto pb-60 flex flex-wrap justify-center">
                     <div className="mb-2 w-3/7 text-center mb-2">
                         <h2 className="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2">Engineering Wiki</h2>
                         <h1 className="sm:text-1xl text-1xl text-gray-600 font-medium title-font mb-2">記憶より記録を。</h1>

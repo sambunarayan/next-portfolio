@@ -2,8 +2,7 @@ import Link from 'next/link';
 import Styles from '@/styles/aboutme.module.css';
 
 export default function Url({ webPageUrl }) {
-    console.log(webPageUrl);
-    if (webPageUrl === undefined || webPageUrl === null) {
+    if (!webPageUrl || !(webPageUrl.trim())) {
         return (<></>);
     }
     return (
