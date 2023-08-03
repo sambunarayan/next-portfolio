@@ -5,6 +5,34 @@ export default function CareerProjects() {
         <section class="text-gray-600 body-font overflow-hidden">
             <div class="container px-5 py-24 mx-auto">
                 <div class="-my-8 divide-y-2 divide-gray-100">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-gray-700">外部サービス向けのWebAPI開発</span>
+                            <span class="mt-1 text-gray-500 text-sm">2023年7月</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
+                            <p class="leading-relaxed">説明</p>
+                            <br />
+                            <p class="leading-relaxed">
+                                役割など記載
+                                <br />
+                            </p>
+                            <br />
+                            <div className="mb-2">
+                                <li className="about-me-item">言語・環境</li>
+                                <div className="about-me-sub">
+                                    Back-end：JakartaEE, JDK17<br />
+                                    Batch : shell, Helidon SE, JDK11<br />
+                                    DB：Oracle<br />
+                                    Server：Kubernetes<br />
+                                    CI/CD：Jenkins, JFrog, Harness, Harbor<br />
+                                    Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
+                                    Version control：Bitbucket
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span class="font-semibold title-font text-gray-700">社内メンテナンスページ開発</span>
