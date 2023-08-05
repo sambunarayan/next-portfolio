@@ -8,7 +8,7 @@ export default function CareerProjects() {
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span class="font-semibold title-font text-gray-700">外部サービス向けのWebAPI開発</span>
-                            <span class="mt-1 text-gray-500 text-sm">2023年7月</span>
+                            <span class="mt-1 text-gray-500 text-sm">2023年7月 - 現在</span>
                         </div>
                         <div class="md:flex-grow">
                             <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
@@ -22,10 +22,10 @@ export default function CareerProjects() {
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
                                 <div className="about-me-sub">
-                                    Back-end：JakartaEE, JDK17<br />
-                                    Batch : shell, Helidon SE, JDK11<br />
+                                    API：JakartaEE, JDK17, Helidon SE<br />
+                                    Batch：JDK11, Helidon SE, shell
                                     DB：Oracle<br />
-                                    Server：Kubernetes<br />
+                                    Server：Netty server(Helidon内蔵), Kubernetes<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
                                     Version control：Bitbucket
