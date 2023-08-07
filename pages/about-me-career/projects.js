@@ -19,7 +19,8 @@ export default function CareerProjects() {
                             <br />
                             <p class="leading-relaxed">
                                 今までは大きな概念で一つのアプリケーションにいろんなサービスをまとめていましたが、<br />
-                                サービスごとにアプリケーションを分離し、もっと効率よくサービスできるように開発しています。
+                                サービスごとにアプリケーションを分離し、サービス間の影響を最小限にすることとリソースを十分利用することで<br/>
+                                もっと効率よくサービスできるように開発しています。
                                 <br />
                             </p>
                             <br />
@@ -29,7 +30,9 @@ export default function CareerProjects() {
                                     API：JakartaEE, JDK17, Helidon SE<br />
                                     Batch：JDK11, Helidon SE, shell
                                     DB：Oracle<br />
-                                    Server：Netty server(Helidon内蔵), Kubernetes<br />
+                                    Code check：SonarLint, SonarQube
+                                    TestFramework：JUnit, Mockito
+                                    Server：Netty server(Helidon内蔵), NGINX, Kubernetes, Kong gateway<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
                                     Version control：Bitbucket
@@ -39,7 +42,13 @@ export default function CareerProjects() {
                                 <li className="about-me-item">テックリーダー</li>
                                 <div className="about-me-sub">
                                     メインはWebAPIの設計や開発ですが、<br />
-                                    バッチ開発や社内向けwebAPI開発のフォローも行っています。<br />
+                                    バッチ開発や社内向けwebAPI開発のテックフォローも行っています。<br />
+                                </div>
+                            </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">基本設計・詳細設計</li>
+                                <div className="about-me-sub">
+                                    企画部署との要件整理と、他社とコミュニケーションをとりながらインタフェース資料作成<br />
                                 </div>
                             </div>
                         </div>
@@ -66,6 +75,7 @@ export default function CareerProjects() {
                                     Front-end：JSF, CSS, Javascript, JakartaEE, JDK11<br />
                                     Back-end：JakartaEE, JDK11<br />
                                     Batch：shell, Helidon SE, JDK11<br />
+                                    Code check：SonarQube
                                     TestFramework：JUnit, Mockito
                                     DB：Oracle<br />
                                     Server：Kubernetes, payara, Apache web server(reverse proxy)<br />
