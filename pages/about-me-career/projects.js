@@ -27,11 +27,11 @@ export default function CareerProjects() {
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
                                 <div className="about-me-sub">
-                                    API：JakartaEE, JDK17, Helidon SE<br />
+                                    WebAPI：JakartaEE, JDK17, Helidon SE<br />
                                     Batch：JDK11, Helidon SE, shell
                                     DB：Oracle<br />
                                     Code check：SonarLint, SonarQube
-                                    TestFramework：JUnit, Mockito
+                                    TestFramework：JUnit, Mockito, Apache Jmeter
                                     Server：Netty server(Helidon内蔵), NGINX, Kubernetes, Kong gateway<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
