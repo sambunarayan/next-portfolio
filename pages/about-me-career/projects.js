@@ -19,7 +19,7 @@ export default function CareerProjects() {
                             <br />
                             <p class="leading-relaxed">
                                 今までは大きな概念で一つのアプリケーションにいろんなサービスをまとめていましたが、<br />
-                                サービスごとにアプリケーションを分離し、サービス間の影響を最小限にすることとリソースを十分利用することで<br/>
+                                サービスごとにアプリケーションを分離し、サービス間の影響を最小限にすることとリソースを十分利用することで<br />
                                 もっと効率よくサービスできるように開発しています。
                                 <br />
                             </p>
@@ -30,8 +30,8 @@ export default function CareerProjects() {
                                     WebAPI：JakartaEE, JDK17, Helidon SE<br />
                                     Batch：JDK11, Helidon SE, shell
                                     DB：Oracle<br />
-                                    Code check：SonarLint, SonarQube
-                                    TestFramework：JUnit, Mockito, Apache Jmeter
+                                    Code check：SonarLint, SonarQube<br />
+                                    TestFramework：JUnit, Mockito, Apache Jmeter<br />
                                     Server：Netty server(Helidon内蔵), NGINX, Kubernetes, Kong gateway<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
@@ -75,8 +75,8 @@ export default function CareerProjects() {
                                     Front-end：JSF, CSS, Javascript, JakartaEE, JDK11<br />
                                     Back-end：JakartaEE, JDK11<br />
                                     Batch：shell, Helidon SE, JDK11<br />
-                                    Code check：SonarQube
-                                    TestFramework：JUnit, Mockito
+                                    Code check：SonarQube<br />
+                                    TestFramework：JUnit, Mockito<br />
                                     DB：Oracle<br />
                                     Server：Kubernetes, payara, Apache web server(reverse proxy)<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
