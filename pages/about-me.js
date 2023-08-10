@@ -151,7 +151,6 @@ export async function getStaticProps() {
 
     const res = await fetch(`https://api.notion.com/v1/databases/${CAREER_DATABASE_ID}/query`, options);
     const projects = await res.json();
-
     return {
         props: { projects },
     }
