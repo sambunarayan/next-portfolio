@@ -114,7 +114,6 @@ export async function getServerSideProps({ params }) {
     const res = await fetch(`https://api.notion.com/v1/databases/${PROJECTS_DATABASE_ID}/query`, options);
     const project = await res.json();
 
-    console.log(project);
     return {
         props: {
             project,
