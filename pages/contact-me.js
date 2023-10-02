@@ -41,7 +41,6 @@ export async function getStaticProps() {
         },
         body: JSON.stringify({ page_size: 100 })
     };
-
     const res = await fetch(`https://api.notion.com/v1/databases/${CAREER_DATABASE_ID}/query`, options);
     const projects = await res.json();
     return {

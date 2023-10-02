@@ -7,7 +7,55 @@ export default function CareerProjects() {
                 <div class="-my-8 divide-y-2 divide-gray-100">
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">社内メンテナンスページ開発</span>
+                            <span class="font-semibold title-font text-gray-700">WebAPI開発</span>
+                            <span class="mt-1 text-gray-500 text-sm">2023年7月 - 現在</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
+                            <p class="leading-relaxed">
+                                他社提供用のAPIを新規構築中です。<br />
+                                MicroService化を行っていることが今までの開発と異なる部分です。<br />
+                            </p>
+                            <br />
+                            <p class="leading-relaxed">
+                                今までは大きな概念で一つのアプリケーションにいろんなサービスをまとめていましたが、<br />
+                                サービスごとにアプリケーションを分離し、サービス間の影響を最小限にすることとリソースを十分利用することで<br />
+                                もっと効率よくサービスできるように開発しています。
+                                <br />
+                            </p>
+                            <br />
+                            <div className="mb-2">
+                                <li className="about-me-item">言語・環境</li>
+                                <div className="about-me-sub">
+                                    WebAPI：JakartaEE, JDK17, Helidon SE<br />
+                                    Batch：JDK11, Helidon SE, shell
+                                    DB：Oracle<br />
+                                    Code check：SonarLint, SonarQube<br />
+                                    TestFramework：JUnit, Mockito, Apache Jmeter<br />
+                                    Server：Netty server(Helidon内蔵), NGINX, Kubernetes, Kong gateway<br />
+                                    CI/CD：Jenkins, JFrog, Harness, Harbor<br />
+                                    Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
+                                    Version control：Bitbucket
+                                </div>
+                            </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">テックリーダー</li>
+                                <div className="about-me-sub">
+                                    メインはWebAPIの設計や開発ですが、<br />
+                                    バッチ開発や社内向けwebAPI開発のテックフォローも行っています。<br />
+                                </div>
+                            </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">基本設計・詳細設計</li>
+                                <div className="about-me-sub">
+                                    企画部署との要件整理と、他社とコミュニケーションをとりながらインタフェース資料作成<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-gray-700">Webページ開発</span>
                             <span class="mt-1 text-gray-500 text-sm">2023年1月 - 2023年6月</span>
                         </div>
                         <div class="md:flex-grow">
@@ -26,7 +74,9 @@ export default function CareerProjects() {
                                 <div className="about-me-sub">
                                     Front-end：JSF, CSS, Javascript, JakartaEE, JDK11<br />
                                     Back-end：JakartaEE, JDK11<br />
-                                    Batch : shell, Helidon SE, JDK11<br />
+                                    Batch：shell, Helidon SE, JDK11<br />
+                                    Code check：SonarQube<br />
+                                    TestFramework：JUnit, Mockito<br />
                                     DB：Oracle<br />
                                     Server：Kubernetes, payara, Apache web server(reverse proxy)<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
@@ -52,16 +102,16 @@ export default function CareerProjects() {
                             <div className="mb-2">
                                 <li className="about-me-item">開発・リリース</li>
                                 <div className="about-me-sub">
-                                    JSFを使用してWebPageを作成しました。<br /> 
+                                    JSFを使用してWebPageを作成しました。<br />
                                     フレームワークはJavaeeを使用し、Web application serverはPayara、reverse proxy serverはApacheを利用して開発を行いました。<br />
-                                    <br/>
-                                    また、サーバー間のデータ転送のため、SFTP転送を行うをshellを実装し、夜間バッチで定期的に稼働されるようにしました。<br/>
-                                    大量データ（2千万件）のデータをDBに入れ替える必要があり、処理速度やサーバー負荷を一定の基準値を満たすように要求されました。<br/>
-                                    結果、OracleのSQL Loaderの機能を利用することと、データをパーティションすることで要求を満たすことができました。<br/>
-                                    <br/>
-                                    特に旧データと登録したデータの切り替えるタイミングにアクセスのあった場合、データ整合性などの問題がありましたが、<br/>
-                                    もう一つのテーブルを用意し、最新のパーティション情報（カーソル）を管理するように実装しました。<br/>
-                                    カーソル（１カラム）を更新することで一瞬で切り替えられるように実現できました。<br/>
+                                    <br />
+                                    また、サーバー間のデータ転送のため、SFTP転送を行うをshellを実装し、夜間バッチで定期的に稼働されるようにしました。<br />
+                                    大量データ（2千万件）のデータをDBに入れ替える必要があり、処理速度やサーバー負荷を一定の基準値を満たすように要求されました。<br />
+                                    結果、OracleのSQL Loaderの機能を利用することと、データをパーティションすることで要求を満たすことができました。<br />
+                                    <br />
+                                    特に旧データと登録したデータの切り替えるタイミングにアクセスのあった場合、データ整合性などの問題がありましたが、<br />
+                                    もう一つのテーブルを用意し、最新のパーティション情報（カーソル）を管理するように実装しました。<br />
+                                    カーソル（１カラム）を更新することで一瞬で切り替えられるように実現できました。<br />
                                 </div>
                             </div>
                         </div>
@@ -80,8 +130,9 @@ export default function CareerProjects() {
                                 <div className="about-me-sub">
                                     Back-end：JakartaEE, JDK11<br />
                                     Batch : shell, Helidon SE, JDK11<br />
+                                    TestFramework：JUnit, Mockito, Jmeter(for performance test)
                                     DB：Oracle<br />
-                                    Server：RHEL, Kubernetes, payara, Kafka, Kong gateway<br />
+                                    Server：RHEL, Kubernetes, payara, Kafka, Kong gateway, Docker(for UT kafka server)<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Performance Test：Apache JMeter<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
