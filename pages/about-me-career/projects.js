@@ -28,7 +28,7 @@ export default function CareerProjects() {
                                 <li className="about-me-item">言語・環境</li>
                                 <div className="about-me-sub">
                                     WebAPI：JakartaEE, JDK17, Helidon SE<br />
-                                    Batch：JDK11, Helidon SE, shell
+                                    Batch：JDK11, Helidon SE, shell<br />
                                     DB：Oracle<br />
                                     Code check：SonarLint, SonarQube<br />
                                     TestFramework：JUnit, Mockito, Apache Jmeter<br />
