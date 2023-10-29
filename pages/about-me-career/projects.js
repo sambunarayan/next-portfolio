@@ -51,18 +51,27 @@ export default function CareerProjects() {
                                     企画部署との要件整理と、他社とコミュニケーションをとりながらインタフェース資料作成<br />
                                 </div>
                             </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">開発</li>
+                                <div className="about-me-sub">
+                                    MicroService 化を行った WebAPI を作成しました。<br/>
+                                    インフラチームと連携を取りながら、Kong gatewayの api key設定依頼、NGINXのredirect設定を行いました。<br/>
+                                    api key、NGINX 設定はインフラチーム側のタスクですが、インフラ担当者の経<br/>
+                                    験が足りず、開発チーム側で主導的に設定・テストを行いました。
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">Webページ開発</span>
-                            <span class="mt-1 text-gray-500 text-sm">2023年1月 - 2023年6月</span>
+                    <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">Webページ開発</span>
+                            <span className="mt-1 text-gray-500 text-sm">2023年1月 - 2023年6月</span>
                         </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">社内メンテナンスページ開発</h2>
-                            <p class="leading-relaxed">会員管理用のため新規メンテナンスページや夜間バッチシステムを開発</p>
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">社内メンテナンスページ開発</h2>
+                            <p className="leading-relaxed">会員管理用のため新規メンテナンスページや夜間バッチシステムを開発</p>
                             <br />
-                            <p class="leading-relaxed">
+                            <p className="leading-relaxed">
                                 小規模の社内システムではありますが、フロントからバックエンド、バッチ処理まで一連の流れを設計・開発・テストを主導した初めてのプロジェクトでした。<br />
                                 特に開発工程は、多国籍のメンバーをリードして開発を行ったため、<br />
                                 コミュニケーションロスや認識齟齬などテクニカル的な部分以外のリスクにも考慮しながらプロジェクトを進めていきましたので、<br />
