@@ -2,22 +2,22 @@ import Layout from '@/components/layout';
 
 export default function CareerProjects() {
     return <Layout>
-        <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">WebAPI開発</span>
-                            <span class="mt-1 text-gray-500 text-sm">2023年7月 - 現在</span>
+        <section className="text-gray-600 body-font overflow-hidden">
+            <div className="container px-5 py-24 mx-auto">
+                <div className="-my-8 divide-y-2 divide-gray-100">
+                    <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">WebAPI開発</span>
+                            <span className="mt-1 text-gray-500 text-sm">2023年7月 - 現在</span>
                         </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
-                            <p class="leading-relaxed">
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
+                            <p className="leading-relaxed">
                                 他社提供用のAPIを新規構築中です。<br />
                                 MicroService化を行っていることが今までの開発と異なる部分です。<br />
                             </p>
                             <br />
-                            <p class="leading-relaxed">
+                            <p className="leading-relaxed">
                                 今までは大きな概念で一つのアプリケーションにいろんなサービスをまとめていましたが、<br />
                                 サービスごとにアプリケーションを分離し、サービス間の影響を最小限にすることとリソースを十分利用することで<br />
                                 もっと効率よくサービスできるように開発しています。
@@ -125,14 +125,14 @@ export default function CareerProjects() {
                             </div>
                         </div>
                     </div>
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">モバイルNFC開発</span>
-                            <span class="mt-1 text-gray-500 text-sm">2021年 - 2022年</span>
+                    <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">モバイルNFC開発</span>
+                            <span className="mt-1 text-gray-500 text-sm">2021年 - 2022年</span>
                         </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Token管理中継サーバー開発</h2>
-                            <p class="leading-relaxed">モバイルタッチ決済時に使用される各カードブランド社（VISA、Mastercardなど）のTokenを管理・中継するサーバーを開発  </p>
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Token管理中継サーバー開発</h2>
+                            <p className="leading-relaxed">モバイルタッチ決済時に使用される各カードブランド社（VISA、Mastercardなど）のTokenを管理・中継するサーバーを開発  </p>
                             <br />
                             <div className="mb-2">
                                 <li className="about-me-item">言語・環境</li>
@@ -188,14 +188,14 @@ export default function CareerProjects() {
                             </div>
                         </div>
                     </div>
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">債権管理チーム</span>
-                            <span class="mt-1 text-gray-500 text-sm">2017年 - 2020年</span>
+                    <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">債権管理チーム</span>
+                            <span className="mt-1 text-gray-500 text-sm">2017年 - 2020年</span>
                         </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">カード基幹システム開発</h2>
-                            <p class="leading-relaxed">債権業務に関わるシステムを開発</p>
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">カード基幹システム開発</h2>
+                            <p className="leading-relaxed">債権業務に関わるシステムを開発</p>
                             <div className="mb-2">
                                 <li className="about-me-item">債権バッチシステム開発</li>
                                 <div className="about-me-sub">
