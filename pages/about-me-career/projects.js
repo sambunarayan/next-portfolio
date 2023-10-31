@@ -56,8 +56,8 @@ export default function CareerProjects() {
                                 <div className="about-me-sub">
                                     MicroService 化を行った WebAPI を作成しました。<br/>
                                     インフラチームと連携を取りながら、Kong gatewayの api key設定依頼、NGINXのredirect設定を行いました。<br/>
-                                    api key、NGINX 設定はインフラチーム側のタスクですが、インフラ担当者の経<br/>
-                                    験が足りず、開発チーム側で主導的に設定・テストを行いました。
+                                    api key、NGINX 設定はインフラチーム側のタスクですが、インフラ担当者の経験が足りず、<br />
+                                    開発チーム側で主導的に設定・テストを行いました。
                                 </div>
                             </div>
                         </div>
