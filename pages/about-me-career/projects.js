@@ -5,15 +5,58 @@ export default function CareerProjects() {
         <section className="text-gray-600 body-font overflow-hidden">
             <div className="container px-5 py-24 mx-auto">
                 <div className="-my-8 divide-y-2 divide-gray-100">
+                <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">Webページ開発</span>
+                            <span className="mt-1 text-gray-500 text-sm">2023年11月 - 2024年2月</span>
+                        </div>
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">社内従業員向け新規Webページ作成</h2>
+                            <p className="leading-relaxed">
+                                従業員が業務で使用されるWebページをJSFを利用して新規作成したプロジェクトです。<br />
+                            </p>
+                            <p className="leading-relaxed">
+                                本来私にアサインされたプロジェクトではありませんでしたが、
+                                JSF未経験のメンバーたちだったため土台作成とメンバーフォローを行いました。
+                                <br /><br />
+                                Webページは、カレンダー、ラジオボタン、Select Listなどの入力をもとに検索し、
+                                検索結果をテーブル形式で表示しました。<br />
+                                大量の結果をを表示するためにページング処理などを行いました。<br />
+                                また、検索結果データを選択し、部分検索・更新のためAjaxを利用して画面一部を更新できるように実現しました。
+                            </p>
+                            <br />
+                            <div className="mb-2">
+                                <li className="about-me-item">言語・環境</li>
+                                <div className="about-me-sub">
+                                    Front：JakartaEE, JDK8, JSF, JQuery, CSS<br />
+                                    Backend：JakartaEE, JDK8, JPA<br />
+                                    DB：Oracle<br />
+                                    Code check：SonarLint, SonarQube<br />
+                                    TestFramework：JUnit, Mockito<br />
+                                    Server：Payara<br />
+                                    Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
+                                    Version control：Bitbucket, Github（Bitbucketから移行）
+                                </div>
+                            </div>
+                            <div className="mb-2">
+                                <li className="about-me-item">テックリーダー</li>
+                                <div className="about-me-sub">
+                                    メインはWebAPIの設計や開発ですが、<br />
+                                    バッチ開発や社内向けwebAPI開発のテックフォローも行っています。<br /><br />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="py-8 flex flex-wrap md:flex-nowrap">
                         <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span className="font-semibold title-font text-gray-700">WebAPI開発</span>
-                            <span className="mt-1 text-gray-500 text-sm">2023年7月 - 現在</span>
+                            <span className="mt-1 text-gray-500 text-sm">2023年7月 - 2024年2月</span>
                         </div>
                         <div className="md:flex-grow">
                             <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">外部サービス向けのWebAPI開発</h2>
                             <p className="leading-relaxed">
-                                他社提供用のAPIを新規構築中です。<br />
+                                他社提供用のAPIを新規構築しました。<br />
                                 MicroService化を行っていることが今までの開発と異なる部分です。<br />
                             </p>
                             <br />
@@ -35,7 +78,7 @@ export default function CareerProjects() {
                                     Server：Netty server(Helidon内蔵), NGINX, Kubernetes, Kong gateway<br />
                                     CI/CD：Jenkins, JFrog, Harness, Harbor<br />
                                     Communication Tool：Microsft Teams, JIRA, Confluence, ZOOM<br />
-                                    Version control：Bitbucket
+                                    Version control：Bitbucket, Github（Bitbucketから移行）
                                 </div>
                             </div>
                             <div className="mb-2">
@@ -52,12 +95,13 @@ export default function CareerProjects() {
                                 </div>
                             </div>
                             <div className="mb-2">
-                                <li className="about-me-item">開発</li>
+                                <li className="about-me-item">開発・リリース</li>
                                 <div className="about-me-sub">
                                     MicroService 化を行った WebAPI を作成しました。<br/>
-                                    インフラチームと連携を取りながら、Kong gatewayの api key設定依頼、NGINXのredirect設定を行いました。<br/>
-                                    api key、NGINX 設定はインフラチーム側のタスクですが、インフラ担当者の経験が足りず、<br />
-                                    開発チーム側で主導的に設定・テストを行いました。
+                                    開発側が主導してインフラチームとKONGチーム、DBチームを連携を取りながら、開発・リリースを行いました。<br/>
+                                    ・Kong gatewayの api key設定、NGINXのredirect設定<br/>
+                                    ・新規テーブル作成（index設定、sequence作成）<br/>
+                                    ・SQLチューニング（実行計画でindex使用状況、実行時間などを確認しSQLをチューニング）
                                 </div>
                             </div>
                         </div>
