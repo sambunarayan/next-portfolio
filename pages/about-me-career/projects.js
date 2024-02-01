@@ -21,7 +21,7 @@ export default function CareerProjects() {
                                 <br /><br />
                                 Webページは、カレンダー、ラジオボタン、Select Listなどの入力をもとに検索し、
                                 検索結果をテーブル形式で表示しました。<br />
-                                大量の結果をを表示するためにページング処理などを行いました。<br />
+                                大量の結果を表示するためにページング処理などを行いました。<br />
                                 また、検索結果データを選択し、部分検索・更新のためAjaxを利用して画面一部を更新できるように実現しました。
                             </p>
                             <br />
@@ -41,9 +41,9 @@ export default function CareerProjects() {
                             <div className="mb-2">
                                 <li className="about-me-item">テックリーダー</li>
                                 <div className="about-me-sub">
-                                    メインはWebAPIの設計や開発ですが、<br />
-                                    バッチ開発や社内向けwebAPI開発のテックフォローも行っています。<br /><br />
-                                    
+                                    新規画面作成だったため、他メンバーが参考になる土台となる２画面を作成しました。<br />
+                                    CSVファイルアップロード機能(FileUpload機能）など、実装する際に困っているメンバーのフォローを行いました。<br />
+                                    また、コードレビューを行い、コード・機能のチェックを行い、現在実装状況の確認と課題確認を行いました。<br />
                                 </div>
                             </div>
                         </div>
